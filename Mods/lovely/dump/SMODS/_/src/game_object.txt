@@ -1,0 +1,1 @@
+=[SMODS _ "src/game_object.lua"]

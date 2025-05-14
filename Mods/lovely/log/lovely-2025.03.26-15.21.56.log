@@ -1,0 +1,158 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'DebugPlus', skipping it.
+INFO - [♥] Found .lovelyignore in 'JoyousSpring-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Talisman', skipping it.
+WARN - [♥] Unknown key `patches.16.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Bunco-5.1\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.148.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Bunco-5.1\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 75ms
+WARN - [♥] Pattern 'mod = mod or 0' on target 'main.lua' for pattern patch from Bunco-5.1\lovely.toml resulted in no matches
+INFO - [♥] Applied 15 patches to 'main.lua'
+INFO - [♥] Applied 6 patches to 'engine/controller.lua'
+INFO - [♥] Applied 16 patches to 'back.lua'
+INFO - [♥] Applied 10 patches to 'tag.lua'
+INFO - [♥] Applied 4 patches to 'engine/node.lua'
+INFO - [♥] Applied 1 patch to 'engine/moveable.lua'
+INFO - [♥] Applied 2 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+INFO - [♥] Applied 54 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'G.SPLASH_BACK:define_draw_steps({{\n    shader = \'splash\',\n    send = {\n        {name = \'time\', ref_table = G.TIMERS, ref_value = \'REAL\'},\n        {name = \'vort_speed\', val = 1},\n        {name = \'colour_1\', ref_table = G.C, ref_value = \'COLOUR1\'},\n        {name = \'colour_2\', ref_table = G.C, ref_value = \'WHITE\'},\n        {name = \'mid_flash\', val = 0},\n        {name = \'vort_offset\', val = (2*90.15315131*os.time())%100000},\n    }}})\n' on target 'game.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 55 patches to 'game.lua'
+INFO - [♥] Applied 6 patches to 'globals.lua'
+INFO - [♥] Applied 3 patches to 'engine/ui.lua'
+WARN - [♥] Pattern 'table.insert(t, create_toggle({label = localize(\'b_high_contrast_cards\'), ref_table = G.SETTINGS, ref_value = \'colourblind_option\', callback = G.FUNCS.refresh_contrast_mode}))' on target 'functions/UI_definitions.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 100 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'mult, hand_chips, modded = G.GAME.blind:modify_hand(G.play.cards, poker_hands, text, mult, hand_chips)' on target 'functions/state_events.lua' for pattern patch from AzzysJokers-1.2.2\lovely\patcher.toml resulted in no matches
+WARN - [♥] Pattern 'card_eval_status_text((reps[j].jokers or reps[j].seals).card, \'jokers\', nil, nil, nil, (reps[j].jokers or reps[j].seals))' on target 'functions/state_events.lua' for pattern patch from AzzysJokers-1.2.2\lovely\patcher.toml resulted in no matches
+WARN - [♥] Pattern 'for j=1,#reps do' on target 'functions/state_events.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'table.sort(scoring_hand, function (a, b) return a.T.x < b.T.x end )' on target 'functions/state_events.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'reps[#reps+1] = eval' on target 'functions/state_events.lua' for pattern patch from MathBlinds-main\lovely.toml resulted in no matches
+WARN - [♥] Regex 'for h[ ]*\\= 1, eval\\.jokers\\.repetitions do\n[ \\t]*if G\\.GAME\\.blind.name \\=\\= \"bl_mathbl_infinite\" and not G\\.GAME\\.blind\\.disabled then\n[ \\t]*G\\.GAME\\.blind:wiggle\\(\\)\n[ \\t]*G\\.GAME\\.blind\\.triggered \\= true\n[ \\t]*else\n[ \\t]*reps\\[#reps\\+1\\] \\= eval\n[ \\t]*end\n[ \\t]*end\n[ \\t]*end' on target 'functions/state_events.lua' for regex patch from MathBlinds-main\lovely.toml resulted in no matches
+WARN - [♥] Regex '([^)p])/(5)' on target 'functions/state_events.lua' for regex patch from BalatroBakery-main\lovely.toml resulted in 3 matches, wanted 7
+WARN - [♥] Regex '>= (to_big)?\\(5\\)' on target 'functions/state_events.lua' for regex patch from BalatroBakery-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '    for k, v in ipairs(G.play.cards) do\n        if (not v.shattered) and (not v.destroyed) then\n            draw_card(G.play,G.discard, it*100/play_count,\'down\', false, v)\n            it = it + 1\n        end\n    end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern '                if effects.jokers.level_up then\n                    level_up_hand(card, text)\n                end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card_eval_status_text(card, \'jokers\', nil, percent, nil, effects.jokers)' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if next(find_joker(\'Splash\')) then' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 104 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern '{n=G.UIT.O, config={object = DynaText({string = {\' \'..localize(\'ph_mr_bones\')..\' \'}, colours = {G.C.FILTER}, shadow = true, pop_in = 0, scale = 0.5*scale, silent = true})}}' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if specific_vars.nominal_chips then\n    localize{type = \'other\', key = \'card_chips\', nodes = desc_nodes, vars = {specific_vars.nominal_chips}}\nend\nif specific_vars.bonus_chips then\n    localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {specific_vars.bonus_chips}}\nend\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 152 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then' on target 'functions/button_callbacks.lua' for pattern patch from Prism-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 72 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind and G.GAME.blind.in_blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods-main\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if next(find_joker(\'Smeared Joker\')) and (self.base.suit == \'Hearts\' or self.base.suit == \'Diamonds\') == (suit == \'Hearts\' or suit == \'Diamonds\') then' on target 'card.lua' for pattern patch from paperback-main\lovely\spectrum.toml resulted in no matches
+WARN - [♥] Pattern 'if next(find_joker(\'Smeared Joker\')) and (self.base.suit == \'Hearts\' or self.base.suit == \'Diamonds\') == (suit == \'Hearts\' or suit == \'Diamonds\') then' on target 'card.lua' for pattern patch from Bunco-5.1\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if true then\nself.children.back = Sprite(self.T.x, self.T.y, self.T.w, self.T.h, G.ASSET_ATLAS[(G.GAME.viewed_back or G.GAME.selected_back) and ((G.GAME.viewed_back or G.GAME.selected_back)[G.SETTINGS.colourblind_option and \'hc_atlas\' or \'lc_atlas\'] or (G.GAME.viewed_back or G.GAME.selected_back).atlas) or \'centers\'], self.params.bypass_back or (self.playing_card and G.GAME[self.back].pos or G.P_CENTERS[\'b_red\'].pos))' on target 'card.lua' for pattern patch from Bunco-5.1\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({trigger = \'after\',delay = 0.1,func = function() G.hand.highlighted[i]:set_ability(G.P_CENTERS[self.ability.consumeable.mod_conv]);return true end }))' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.debuff then\n    self.children.center:draw_shader(\'debuff\', nil, self.ARGS.send_to_shader)\n' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.consumeables.cards[i].ability.consumeable then' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 237 patches to 'card.lua'
+INFO - [♥] Applied 21 patches to 'cardarea.lua'
+WARN - [♥] Pattern 'function Blind:modify_hand(cards, poker_hands, text, mult, hand_chips)' on target 'blind.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 44 patches to 'blind.lua'
+INFO - [♥] Applied 2 patches to 'engine/text.lua'
+INFO - [♥] Applied 3 patches to 'challenges.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/overrides.lua"]'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-03-26 15:22:02 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 1 patch to 'engine/save_manager.lua'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Azazel.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: AzzysJokers
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: Cardsauce
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): CruelBlinds.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: CBL
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): MathBlinds.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: MathBlinds
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: sdm0sstuff
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/SnoresvilleTurbulentJokers/SnoresvilleTurbulentJokers.json, ignoring: [SMODS _ "src/loader.lua"]:105: attempt to call method 'gmatch' (a nil value)
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): SnowMods.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: SnowMods
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/paperback-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Game:start_run(), copy_card(), and Card:load() patched. Reason: Card Sleeve
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons() and Card:remove() patched. Reason: Usable jokers
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Charm Unlocking
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: set_screen_positions() and CardArea:can_highlight() patched. Reason: Charm rendering
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Bakery :: G.FUNCS.can_discard() patched. Reason: Discarding zero cards
+INFO - [G] 2025-03-26 15:22:04 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: card
+INFO - [G] 2025-03-26 15:22:04 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: UI_definitions
+INFO - [G] 2025-03-26 15:22:04 :: WARN  :: Atlas :: Object csau_odio has the same key as an existing object, not registering.
+INFO - [G] 2025-03-26 15:22:04 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-26 15:22:04 :: WARN  :: Atlas :: Detected duplicate register call on object csau_modicon
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Mod DebugPlus was unable to load: 
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Mod JoyousSpring was unable to load: 
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: TOGAPack :: Hello World! Starting TOGAPack...
+INFO - [G] 2025-03-26 15:22:04 :: TRACE :: Loader :: Mod Talisman was unable to load: 
+INFO - [G] 2025-03-26 15:22:04 :: WARN  :: Sound :: Object Coo29_yippie has the same key as an existing object, not registering.
+INFO - [G] 2025-03-26 15:22:04 :: WARN  :: Sound :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Mistigris :: Successfully loaded src/startup/game_hooks.lua!
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Mistigris :: Successfully loaded src/startup/smods_assets.lua!
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Mistigris :: Successfully loaded src/startup/smods_hooks.lua!
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Mistigris :: Successfully loaded src/startup/smods_ownership.lua!
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: Mistigris :: Successfully loaded src/content/sleeve/tribute.lua!
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-03-26 15:22:04 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.491 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0320] Injected Atlas in 3401.781 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0081] Injected Sound in 32.284 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0024] Injected Stake in 0.772 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0011] Injected Rarity in 0.043 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0018] Injected ObjectType in 0.172 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [1161] Injected Center in 8.512 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0014] Injected Undiscovered Sprite in 0.067 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0085] Injected Blind in 0.185 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0007] Injected Seal in 0.186 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0008] Injected Suit in 0.160 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0013] Injected Rank in 0.106 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0050] Injected DeckSkin in 0.395 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0017] Injected PokerHand in 0.147 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0033] Injected Challenge in 0.045 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0043] Injected Tag in 0.264 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0017] Injected Sticker in 0.381 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0014] Injected Shader in 178.616 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.084 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.100 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0002] Injected nil in 0.015 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0025] Injected Draw Step in 0.067 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 35.800 ms
+INFO - [G] 2025-03-26 15:22:08 :: INFO  :: TIMER :: [0057] Injected D6 Side in 0.300 ms

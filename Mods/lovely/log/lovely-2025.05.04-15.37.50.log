@@ -1,0 +1,111 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'Balatro-Draft-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Cryptid-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'GARBSHIT-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'TooManyDecks-main', skipping it.
+WARN - [♥] Unknown key `patches.18.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 118ms
+INFO - [♥] Applied 1 patch to 'conf.lua'
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 34 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 16 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 7 patches to 'tag.lua'
+INFO - [♥] Applied 2 patches to 'engine/event.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 55 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 60 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 94 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips * mult) * (e and e.antiscore and -1 or 1),' on target 'functions/state_events.lua' for pattern patch from LobotomyCorp-main\lovely\blindexpander.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then \n        delay(0.8)\n        G.E_MANAGER:add_event(Event({\n        trigger = \'immediate\',\n        func = (function() play_sound(\'chips2\');return true end)\n        }))\n    end' on target 'functions/state_events.lua' for pattern patch from LobotomyCorp-main\lovely\game_mechanics.toml resulted in no matches
+INFO - [♥] Applied 64 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 144 patches to 'functions/common_events.lua'
+WARN - [♥] Regex '(?<indent>[\\t ]*)voucher_pool\\[i\\+\\(j-1\\)\\*4 \\+ \\(8\\*\\(args\\.cycle_config\\.current_option - 1\\)\\)\\]\\n[\\s\\S]{6}if not center then break end\\n[\\s\\S]{6}local card = Card\\(G\\.your_collection\\[j\\]\\.T\\.x \\+ G\\.your_collection\\[j\\]\\.T\\.w\\/2, G\\.your_collection\\[j\\]\\.T\\.y, G\\.CARD_W, G\\.CARD_H, G\\.P_CARDS\\.empty, center\\)' on target 'functions/button_callbacks.lua' for regex patch from Flower-Pot-main\lovely\stat_type.toml resulted in no matches
+INFO - [♥] Applied 65 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern '*then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods-main\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur-master\lovely.toml resulted in no matches
+INFO - [♥] Applied 178 patches to 'card.lua'
+INFO - [♥] Applied 10 patches to 'cardarea.lua'
+INFO - [♥] Applied 39 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/ui.lua"]'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/overrides.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-05-04 15:37:57 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2025-05-04 15:37:57 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-0427a
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded.lua
+INFO - [G] 2025-05-04 15:37:59 :: WARN  :: Loader :: Duplicate Mod ID: Handy
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:37:59 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-05-04 15:37:59 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-05-04 15:37:59 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/TooManyDecks-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-04 15:37:59 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-04 15:38:00 :: TRACE :: Loader :: Mod GARBPACK was unable to load: 
+INFO - [G] 2025-05-04 15:38:00 :: INFO  :: DefaultLogger :: Loaded LobotomyCorp~
+INFO - [G] 2025-05-04 15:38:00 :: TRACE :: Loader :: Mod Cryptid was unable to load: 
+INFO - [G] 2025-05-04 15:38:00 :: TRACE :: Loader :: Mod SGTMD was unable to load: 
+INFO - [G] 2025-05-04 15:38:00 :: TRACE :: Loader :: Mod draft was unable to load: 
+INFO - [G] 2025-05-04 15:38:00 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-05-04 15:38:00 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.798 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0028] Injected Atlas in 2021.719 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0090] Injected Sound in 83.744 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0008] Injected Stake in 0.301 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.027 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0005] Injected ObjectType in 0.044 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0108] Injected Center in 1.346 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0007] Injected Undiscovered Sprite in 0.024 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0028] Injected Blind in 0.142 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0004] Injected Seal in 0.485 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0004] Injected Suit in 0.238 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0013] Injected Rank in 0.264 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.405 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.134 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0029] Injected Challenge in 0.092 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0000] Injected Tag in 0.001 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.375 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0001] Injected Shader in 94.306 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.044 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0036] Injected Achievement in 0.470 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0002] Injected nil in 0.065 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0024] Injected Draw Step in 0.210 ms
+INFO - [G] 2025-05-04 15:38:02 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 19.251 ms

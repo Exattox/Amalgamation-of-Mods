@@ -1,0 +1,200 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 53ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 16 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 5 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 7 patches to 'tag.lua'
+INFO - [♥] Applied 2 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 2 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 51 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 43 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 81 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex '([^)p])/(5)' on target 'functions/state_events.lua' for regex patch from BalatroBakery-main\lovely.toml resulted in 3 matches, wanted 7
+INFO - [♥] Applied 53 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 135 patches to 'functions/common_events.lua'
+INFO - [♥] Applied 55 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind and G.GAME.blind.in_blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods-main\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 160 patches to 'card.lua'
+INFO - [♥] Applied 9 patches to 'cardarea.lua'
+INFO - [♥] Applied 38 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-03-24 16:15:09 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-24 16:15:11 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-03-24 16:15:11 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Game:start_run(), copy_card(), and Card:load() patched. Reason: Card Sleeve
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons() and Card:remove() patched. Reason: Usable jokers
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Charm Unlocking
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: set_screen_positions() and CardArea:can_highlight() patched. Reason: Charm rendering
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: Bakery :: G.FUNCS.can_discard() patched. Reason: Discarding zero cards
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-03-24 16:15:11 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 2.090 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0013] Injected Atlas in 761.760 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0009] Injected Sound in 7.921 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0008] Injected Stake in 0.328 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.023 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0005] Injected ObjectType in 0.040 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0089] Injected Center in 0.997 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0008] Injected Undiscovered Sprite in 0.041 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0004] Injected Blind in 0.025 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0004] Injected Seal in 0.470 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0004] Injected Suit in 0.268 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0013] Injected Rank in 0.237 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.226 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.128 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0022] Injected Challenge in 0.045 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0007] Injected Tag in 0.029 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.090 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0001] Injected Shader in 118.743 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.013 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.091 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0002] Injected nil in 0.012 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0021] Injected Draw Step in 0.046 ms
+INFO - [G] 2025-03-24 16:15:12 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 2.100 ms
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-24 16:16:30 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS Bakery "src//charm.lua"]:198: attempt to index field 'Bakery_charm' (a nil value)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:612'
+	Local variables:
+	 msg = string: "[SMODS Bakery \"src//charm.lua\"]:198: attempt to index field 'Bakery_charm' (a nil value)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE metamethod at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 598 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 598 of chunk main.lua)
+(3) Lua field 'get_next_charms' at file 'src//charm.lua:198' (from mod with id Bakery)
+	Local variables:
+	 ret = nil
+	 count = nil
+	 ret = table: 0x21b64970  {spawn:table: 0x21dea4c0}
+	 _pool = table: 0x20b27b18  {1:UNAVAILABLE, 2:UNAVAILABLE, 3:BakeryCharm_Bakery_Pedigree, 4:UNAVAILABLE, 5:UNAVAILABLE, 6:UNAVAILABLE, 7:BakeryCharm_Bakery_Introversion, 8:BakeryCharm_Bakery_Extroversion (more...)}
+	 _pool_key = string: "BakeryCharm2"
+	 already = number: 0
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x20b27b18  {1:UNAVAILABLE, 2:UNAVAILABLE, 3:BakeryCharm_Bakery_Pedigree, 4:UNAVAILABLE, 5:UNAVAILABLE, 6:UNAVAILABLE, 7:BakeryCharm_Bakery_Introversion, 8:BakeryCharm_Bakery_Extroversion (more...)}
+	 (for control) = number: 1
+	 _ = number: 1
+	 v = string: "UNAVAILABLE"
+	 (*temporary) = nil
+	 (*temporary) = table: 0x20b27b18  {1:UNAVAILABLE, 2:UNAVAILABLE, 3:BakeryCharm_Bakery_Pedigree, 4:UNAVAILABLE, 5:UNAVAILABLE, 6:UNAVAILABLE, 7:BakeryCharm_Bakery_Introversion, 8:BakeryCharm_Bakery_Extroversion (more...)}
+	 (*temporary) = string: "BakeryCharm2"
+	 (*temporary) = string: "2"
+	 (*temporary) = nil
+	 (*temporary) = nil
+	 (*temporary) = number: 10
+	 (*temporary) = string: "attempt to index field 'Bakery_charm' (a nil value)"
+(4) Lua field 'func' at file 'functions/state_events.lua:199'
+	Local variables:
+	 (*temporary) = table: 0x20a93960  {reroll_cost_increase:0, jokers_purchased:0, reroll_cost:5, discards_left:1, ancient_card:table: 0x20e830f8, discards_used:2, hands_played:4, dollars:0 (more...)}
+(5) Lua method 'handle' at file 'engine/event.lua:55'
+	Local variables:
+	 self = table: 0x2180c620  {start_timer:true, timer:TOTAL, blockable:true, trigger:after, func:function: 0x20d21d40, delay:0.3, complete:false, time:225.76252427229, blocking:true (more...)}
+	 _results = table: 0x20cca788  {blocking:true, pause_skip:false, time_done:true, completed:false}
+(6) Lua method 'update' at file 'engine/event.lua:182'
+	Local variables:
+	 self = table: 0x20ccbec0  {queue_last_processed:77.23333333333, queues:table: 0x20ccbee8, queue_dt:0.016666666666667, queue_timer:77.23799533453}
+	 dt = number: 0.00569032
+	 forced = nil
+	 (for generator) = C function: next
+	 (for state) = table: 0x20ccbee8  {unlock:table: 0x20ccbfd8, other:table: 0x20ccc078, tutorial:table: 0x20ccc028, base:table: 0x20ccc000, achievement:table: 0x20ccc050}
+	 (for control) = number: nan
+	 k = string: "base"
+	 v = table: 0x20ccc000  {1:table: 0x20e803c8, 2:table: 0x2180c620, 3:table: 0x2240eb78, 4:table: 0x21edf6c0, 5:table: 0x21882d70, 6:table: 0x20f7bed0, 7:table: 0x21a4c658 (more...)}
+	 blocked = boolean: false
+	 i = number: 2
+	 results = table: 0x20cca788  {blocking:true, pause_skip:false, time_done:true, completed:false}
+(7) Lua upvalue 'gameUpdateRef' at file 'game.lua:2555'
+	Local variables:
+	 self = table: 0x20850880  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x211ed9e0, F_ENGLISH_ONLY:false, viewed_stake:1, HUD:table: 0x21077108 (more...)}
+	 dt = number: 0.00569032
+	 http_resp = nil
+(8) Lua upvalue 'upd' at Steamodded file 'src/ui.lua:84' 
+	Local variables:
+	 self = table: 0x20850880  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x211ed9e0, F_ENGLISH_ONLY:false, viewed_stake:1, HUD:table: 0x21077108 (more...)}
+	 dt = number: 0.00569032
+(9) Lua method 'update' at file 'main.lua:1779'
+	Local variables:
+	 self = table: 0x20850880  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x211ed9e0, F_ENGLISH_ONLY:false, viewed_stake:1, HUD:table: 0x21077108 (more...)}
+	 dt = number: 0.00569032
+(10) Lua upvalue 'oldupd' at file 'main.lua:995'
+	Local variables:
+	 dt = number: 0.00569032
+(11) Lua field 'update' at file 'main.lua:1808'
+	Local variables:
+	 dt = number: 0.00569032
+(12) Lua function '?' at file 'main.lua:934' (best guess)
+(13) global C function 'xpcall'
+(14) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 905 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-24 16:16:30 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-0323d-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.7.1
+Platform: Windows
+Steamodded Mods:
+    1: Bakery by BakersDozenBagels [ID: Bakery, Version: 2.0.8, Uses Lovely]
+    2: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg-223 [ID: Talisman, Version: 2.1.0~dev, Uses Lovely]
+        Break Infinity: omeganum
+Lovely Mods:

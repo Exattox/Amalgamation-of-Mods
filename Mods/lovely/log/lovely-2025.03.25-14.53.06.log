@@ -1,0 +1,198 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'Talisman', skipping it.
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 66ms
+INFO - [♥] Applied 1 patch to 'conf.lua'
+INFO - [♥] Applied 23 patches to 'main.lua'
+INFO - [♥] Applied 12 patches to 'engine/controller.lua'
+INFO - [♥] Applied 16 patches to 'back.lua'
+INFO - [♥] Applied 7 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/moveable.lua'
+INFO - [♥] Applied 2 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+INFO - [♥] Applied 47 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 40 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 3 patches to 'engine/ui.lua'
+INFO - [♥] Applied 84 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'for j=1,#reps do' on target 'functions/state_events.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'table.sort(scoring_hand, function (a, b) return a.T.x < b.T.x end )' on target 'functions/state_events.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+WARN - [♥] Regex '([^)p])/(5)' on target 'functions/state_events.lua' for regex patch from BalatroBakery-main\lovely.toml resulted in 3 matches, wanted 7
+WARN - [♥] Regex '>= (to_big)?\\(5\\)' on target 'functions/state_events.lua' for regex patch from BalatroBakery-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 53 patches to 'functions/state_events.lua'
+INFO - [♥] Applied 111 patches to 'functions/common_events.lua'
+INFO - [♥] Applied 46 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind and G.GAME.blind.in_blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods-main\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+INFO - [♥] Applied 160 patches to 'card.lua'
+INFO - [♥] Applied 9 patches to 'cardarea.lua'
+WARN - [♥] Pattern 'function Blind:modify_hand(cards, poker_hands, text, mult, hand_chips)' on target 'blind.lua' for pattern patch from Cruel-Blinds-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 42 patches to 'blind.lua'
+INFO - [♥] Applied 2 patches to 'engine/text.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-03-25 14:53:12 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 1 patch to 'engine/save_manager.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-25 14:53:14 :: TRACE :: Loader :: Processing Mod file (Legacy header): CruelBlinds.lua
+INFO - [G] 2025-03-25 14:53:14 :: TRACE :: Loader :: Saving Mod Info: CBL
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-25 14:53:14 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-03-25 14:53:14 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Game:start_run(), copy_card(), and Card:load() patched. Reason: Card Sleeve
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons() and Card:remove() patched. Reason: Usable jokers
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Charm Unlocking
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: set_screen_positions() and CardArea:can_highlight() patched. Reason: Charm rendering
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: Bakery :: G.FUNCS.can_discard() patched. Reason: Discarding zero cards
+INFO - [G] 2025-03-25 14:53:14 :: TRACE :: Loader :: Mod Talisman was unable to load: 
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: TIMER :: [0000] Injected Language in 0.002 ms
+INFO - [G] 2025-03-25 14:53:14 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.616 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0023] Injected Atlas in 887.129 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0002] Injected Sound in 0.516 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0017] Injected Stake in 0.452 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.018 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0005] Injected ObjectType in 0.129 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0090] Injected Center in 1.078 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0008] Injected Undiscovered Sprite in 0.036 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0028] Injected Blind in 0.084 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0004] Injected Seal in 0.103 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0004] Injected Suit in 0.083 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0013] Injected Rank in 0.075 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.252 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.117 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0022] Injected Challenge in 0.053 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0007] Injected Tag in 0.022 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0006] Injected Sticker in 0.081 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0001] Injected Shader in 11.928 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0002] Injected Keybind in 0.012 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.075 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0002] Injected nil in 0.159 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0021] Injected Draw Step in 0.221 ms
+INFO - [G] 2025-03-25 14:53:15 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 2.294 ms
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-25 15:00:32 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS Bakery "src//charm.lua"]:280: attempt to call global 'to_big' (a nil value)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:612'
+	Local variables:
+	 msg = string: "[SMODS Bakery \"src//charm.lua\"]:280: attempt to call global 'to_big' (a nil value)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE global at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 598 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 598 of chunk main.lua)
+(3) Lua function '?' at file 'src//charm.lua:280' (from mod with id Bakery) (best guess)
+	Local variables:
+	 e = table: 0x1917d680  {velocity:table: 0x1833f4c0, click_offset:table: 0x1833f048, UIT:7, children:table: 0x1917d6a8, parent:table: 0x190d98e8, shadow_height:0.2, T:table: 0x1833edd0 (more...)}
+	 (*temporary) = nil
+	 (*temporary) = number: 8
+	 (*temporary) = table: 0x1917d680  {velocity:table: 0x1833f4c0, click_offset:table: 0x1833f048, UIT:7, children:table: 0x1917d6a8, parent:table: 0x190d98e8, shadow_height:0.2, T:table: 0x1833edd0 (more...)}
+	 (*temporary) = nil
+	 (*temporary) = string: "attempt to call global 'to_big' (a nil value)"
+(4) Lua method 'set_values' at file 'engine/ui.lua:465'
+	Local variables:
+	 self = table: 0x1917d680  {velocity:table: 0x1833f4c0, click_offset:table: 0x1833f048, UIT:7, children:table: 0x1917d6a8, parent:table: 0x190d98e8, shadow_height:0.2, T:table: 0x1833edd0 (more...)}
+	 _T = table: 0x1917d9c0  {y:0, h:0.94, x:0, w:1.106}
+	 recalculate = nil
+(5) Lua method 'calculate_xywh' at file 'engine/ui.lua:216'
+	Local variables:
+	 self = table: 0x190d98e8  {velocity:table: 0x18f26168, click_offset:table: 0x190d9c18, children:table: 0x1965c870, created_on_pause:false, parent:table: 0x17f92088, definition:table: 0x18e89638 (more...)}
+	 node = table: 0x1917d680  {velocity:table: 0x1833f4c0, click_offset:table: 0x1833f048, UIT:7, children:table: 0x1917d6a8, parent:table: 0x190d98e8, shadow_height:0.2, T:table: 0x1833edd0 (more...)}
+	 _T = table: 0x190d9a60  {x:0, w:1, y:0, h:1, scale:1, r:0}
+	 recalculate = nil
+	 _scale = nil
+	 _nt = table: 0x1917d9c0  {y:0, h:0.94, x:0, w:1.106}
+	 _ct = table: 0x1917da20  {y:0.1, h:0.432, x:1.106, w:1.006}
+	 padding = number: 0.1
+(6) Lua method 'init' at file 'engine/ui.lua:69'
+	Local variables:
+	 self = table: 0x190d98e8  {velocity:table: 0x18f26168, click_offset:table: 0x190d9c18, children:table: 0x1965c870, created_on_pause:false, parent:table: 0x17f92088, definition:table: 0x18e89638 (more...)}
+	 args = table: 0x190d9738  {config:table: 0x190d9798, definition:table: 0x18e89638}
+(7) Lua global 'UIBox' at file 'engine/object.lua:35'
+	Local variables:
+	 self = table: 0x17b21cd8  {remove_group:function: 0x17b0b4d0, draw:function: 0x17b0b550, print_topology:function: 0x17b212c0, recalculate:function: 0x17b0b570, init:function: 0x17b096c8 (more...)}
+	 obj = table: 0x190d98e8  {velocity:table: 0x18f26168, click_offset:table: 0x190d9c18, children:table: 0x1965c870, created_on_pause:false, parent:table: 0x17f92088, definition:table: 0x18e89638 (more...)}
+(8) Lua field 'func' at file 'functions/UI_definitions.lua:920'
+	Local variables:
+	 t1 = table: 0x18ed2df0  {nodes:table: 0x18ed2f58, n:7, config:table: 0x18ed2e18}
+	 t2 = table: 0x18e89638  {nodes:table: 0x195019c0, n:7, config:table: 0x18e896c8}
+	 t3 = table: 0x19501ab8  {nodes:table: 0x19501d20, n:7, config:table: 0x19501b48}
+	 (*temporary) = table: 0x18f78518  {1:table: 0x17f7d470, center:table: 0x19104ff0, back:table: 0x18f7d030, particles:table: 0x17f7d470, price:table: 0x1953b050, shadow:table: 0x192bc8a8 (more...)}
+(9) Lua method 'handle' at file 'engine/event.lua:55'
+	Local variables:
+	 self = table: 0x18416a68  {start_timer:true, timer:TOTAL, blockable:false, trigger:after, func:function: 0x190d8538, delay:0.43, complete:false, time:322.23496007171, blocking:false (more...)}
+	 _results = table: 0x183e2250  {blocking:false, pause_skip:false, time_done:true, completed:false}
+(10) Lua method 'update' at file 'engine/event.lua:182'
+	Local variables:
+	 self = table: 0x180fe468  {queue_last_processed:436.1166666666, queues:table: 0x180fe490, queue_dt:0.016666666666667, queue_timer:436.11920985696}
+	 dt = number: 0.00551519
+	 forced = nil
+	 (for generator) = C function: next
+	 (for state) = table: 0x180fe490  {unlock:table: 0x180fe4b8, other:table: 0x180fe938, tutorial:table: 0x180fe8e8, base:table: 0x180fe4e0, achievement:table: 0x180fe910}
+	 (for control) = number: nan
+	 k = string: "base"
+	 v = table: 0x180fe4e0  {1:table: 0x181ab648, 2:table: 0x18416a68, 3:table: 0x17c1d908, 4:table: 0x192842b0, 5:table: 0x17c7d008, 6:table: 0x181456f0, 7:table: 0x181a8738 (more...)}
+	 blocked = boolean: false
+	 i = number: 2
+	 results = table: 0x183e2250  {blocking:false, pause_skip:false, time_done:true, completed:false}
+(11) Lua upvalue 'gameUpdateRef' at file 'game.lua:2552'
+	Local variables:
+	 self = table: 0x17aa6600  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x19027af0, F_ENGLISH_ONLY:false, viewed_stake:1, HUD:table: 0x19117ac8 (more...)}
+	 dt = number: 0.00551519
+	 http_resp = nil
+(12) Lua method 'update' at Steamodded file 'src/ui.lua:84' 
+	Local variables:
+	 self = table: 0x17aa6600  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x19027af0, F_ENGLISH_ONLY:false, viewed_stake:1, HUD:table: 0x19117ac8 (more...)}
+	 dt = number: 0.00551519
+(13) Lua field 'update' at file 'main.lua:999'
+	Local variables:
+	 dt = number: 0.00551519
+(14) Lua function '?' at file 'main.lua:938' (best guess)
+(15) global C function 'xpcall'
+(16) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 909 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-25 15:00:32 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-0323d-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.7.1
+Platform: Windows
+Steamodded Mods:
+    1: Bakery by BakersDozenBagels [ID: Bakery, Version: 2.0.8, Uses Lovely]
+    2: DebugPlus by WilsontheWolf [ID: DebugPlus, Version: 1.4.1, Uses Lovely]
+    3: Cruel Blinds by mathguy [ID: CBL, Version: 1.4.2, Uses Lovely]
+Lovely Mods:

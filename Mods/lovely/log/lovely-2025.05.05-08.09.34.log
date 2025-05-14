@@ -1,0 +1,261 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'Balatro-Draft-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Cryptid-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Entropy-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'GARBSHIT-main', skipping it.
+WARN - [♥] Unknown key `patches.18.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro-main\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 150ms
+INFO - [♥] Applied 1 patch to 'conf.lua'
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 34 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 16 patches to 'engine/controller.lua'
+INFO - [♥] Applied 15 patches to 'back.lua'
+INFO - [♥] Applied 7 patches to 'tag.lua'
+INFO - [♥] Applied 2 patches to 'engine/event.lua'
+INFO - [♥] Applied 3 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 55 patches to 'functions/misc_functions.lua'
+INFO - [♥] Applied 64 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 94 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips * mult) * (e and e.antiscore and -1 or 1),' on target 'functions/state_events.lua' for pattern patch from LobotomyCorp-main\lovely\blindexpander.toml resulted in no matches
+WARN - [♥] Pattern 'if hand_chips*mult > 0 then \n        delay(0.8)\n        G.E_MANAGER:add_event(Event({\n        trigger = \'immediate\',\n        func = (function() play_sound(\'chips2\');return true end)\n        }))\n    end' on target 'functions/state_events.lua' for pattern patch from LobotomyCorp-main\lovely\game_mechanics.toml resulted in no matches
+INFO - [♥] Applied 65 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 144 patches to 'functions/common_events.lua'
+WARN - [♥] Regex '(?<indent>[\\t ]*)voucher_pool\\[i\\+\\(j-1\\)\\*4 \\+ \\(8\\*\\(args\\.cycle_config\\.current_option - 1\\)\\)\\]\\n[\\s\\S]{6}if not center then break end\\n[\\s\\S]{6}local card = Card\\(G\\.your_collection\\[j\\]\\.T\\.x \\+ G\\.your_collection\\[j\\]\\.T\\.w\\/2, G\\.your_collection\\[j\\]\\.T\\.y, G\\.CARD_W, G\\.CARD_H, G\\.P_CARDS\\.empty, center\\)' on target 'functions/button_callbacks.lua' for regex patch from Flower-Pot-main\lovely\stat_type.toml resulted in no matches
+INFO - [♥] Applied 66 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern '*then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods-main\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur-master\lovely.toml resulted in no matches
+INFO - [♥] Applied 178 patches to 'card.lua'
+INFO - [♥] Applied 10 patches to 'cardarea.lua'
+INFO - [♥] Applied 39 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/ui.lua"]'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/overrides.lua"]'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-05-05 08:09:41 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2025-05-05 08:09:41 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-0427a
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/Entropy-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded.lua
+INFO - [G] 2025-05-05 08:09:43 :: WARN  :: Loader :: Duplicate Mod ID: Handy
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-05-05 08:09:43 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/TooManyDecks-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: Loader :: Valid JSON file found
+INFO - [♥] Applied 7 patches to '=[SMODS galdur "galdur.lua"]'
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Mod GARBPACK was unable to load: 
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: DefaultLogger :: Loaded LobotomyCorp~
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Mod Cryptid was unable to load: 
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Mod draft was unable to load: 
+INFO - [G] 2025-05-05 08:09:43 :: TRACE :: Loader :: Mod entr was unable to load: Missing Dependencies: 1: Cryptid
+
+
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-05-05 08:09:43 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.428 ms
+INFO - [G] 2025-05-05 08:09:45 :: INFO  :: TIMER :: [0036] Injected Atlas in 2256.019 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0090] Injected Sound in 1011.612 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0008] Injected Stake in 0.239 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.023 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0006] Injected ObjectType in 0.086 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0152] Injected Center in 1.294 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0007] Injected Undiscovered Sprite in 0.016 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0029] Injected Blind in 0.081 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected Seal in 0.138 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected Suit in 0.131 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0026] Injected Rank in 0.144 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0028] Injected DeckSkin in 0.237 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.055 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0029] Injected Challenge in 0.061 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0000] Injected Tag in 0.001 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.081 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected Shader in 70.918 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0003] Injected Keybind in 0.016 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0036] Injected Achievement in 0.204 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0004] Injected nil in 0.021 ms
+INFO - [G] 2025-05-05 08:09:46 :: INFO  :: TIMER :: [0027] Injected Draw Step in 0.134 ms
+INFO - [G] 2025-05-05 08:09:47 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 20.172 ms
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-05-05 08:15:21 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS LobotomyCorp "LobotomyCorp.lua"]:2065: attempt to index a nil value
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:612'
+	Local variables:
+	 msg = string: "[SMODS LobotomyCorp \"LobotomyCorp.lua\"]:2065: attempt to index a nil value"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE metamethod at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 598 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 598 of chunk main.lua)
+(3) Lua global 'get_current_pool' at file 'LobotomyCorp.lua:2065' (from mod with id LobotomyCorp)
+	Local variables:
+	 _type = string: "Abnormality"
+	 _rarity = string: "zayin"
+	 legendary = nil
+	 key_append = string: "lobc_rudolta"
+	 _pool = table: 0x1c93e308  {}
+	 _starting_pool = table: 0x23243e90  {1:table: 0x1968a588, 2:table: 0x19475b30, 3:table: 0x19584bb0, 4:table: 0x19424188, 5:table: 0x19608f80, 6:table: 0x193adb20, 7:table: 0x19480800 (more...)}
+	 _pool_key = string: "Abnormalityzayin"
+	 _pool_size = number: 0
+	 bird = boolean: false
+	 birds = table: 0x25c79b00  {}
+	 roll = number: 0.630586
+	 (for generator) = C function: builtin#6
+	 (for state) = table: 0x194b2fa0  {1:scorched_girl, 2:one_sin, 3:queen_of_hatred, 4:happy_teddy_bear, 5:red_shoes, 6:theresia, 7:old_lady, 8:nameless_fetus, 9:wall_gazer, 10:big_bird (more...)}
+	 (for control) = number: 45
+	 _ = number: 45
+	 v = string: "jolliest_jester"
+	 (*temporary) = nil
+	 (*temporary) = string: "j_lobc_jolliest_jester"
+	 (*temporary) = string: "jolliest_jester"
+	 (*temporary) = string: "youre_bald"
+	 (*temporary) = string: "attempt to index a nil value"
+(4) Lua upvalue 'ccr' at file 'functions/common_events.lua:2413'
+	Local variables:
+	 _type = string: "Abnormality"
+	 area = table: 0x199250f8  {click_offset:table: 0x193be3c0, static_rotation:false, shuffle_amt:0, T:table: 0x1931b0c8, offset:table: 0x1a84df88, role:table: 0x198b85a0, last_aligned:-1 (more...)}
+	 legendary = nil
+	 _rarity = string: "zayin"
+	 skip_materialize = nil
+	 soulable = nil
+	 forced_key = nil
+	 key_append = string: "lobc_rudolta"
+	 area = table: 0x199250f8  {click_offset:table: 0x193be3c0, static_rotation:false, shuffle_amt:0, T:table: 0x1931b0c8, offset:table: 0x1a84df88, role:table: 0x198b85a0, last_aligned:-1 (more...)}
+	 center = table: 0x1985a740  {order:1, _d:true, set:Back, stake:1, key:b_red, discovered:true, alerted:true, pos:table: 0x1985a830, unlocked:true, _u:true, _discovered_unlocked_overwritten:true (more...)}
+(5) Lua global 'create_card' at file 'main.lua:1027' (from mod with id SGTMD)
+	Local variables:
+	 _type = string: "Abnormality"
+	 area = table: 0x199250f8  {click_offset:table: 0x193be3c0, static_rotation:false, shuffle_amt:0, T:table: 0x1931b0c8, offset:table: 0x1a84df88, role:table: 0x198b85a0, last_aligned:-1 (more...)}
+	 legendary = nil
+	 _rarity = string: "zayin"
+	 skip_materialize = nil
+	 soulable = nil
+	 forced_key = nil
+	 key_append = string: "lobc_rudolta"
+	 ret = table: 0x197fea00  {}
+(6) Lua field 'create_card' at Steamodded file 'src/utils.lua:368' 
+	Local variables:
+	 t = table: 0x197635f8  {key_append:lobc_rudolta, area:table: 0x199250f8, rarity:zayin, set:Abnormality}
+(7) Lua field 'add_card' at Steamodded file 'src/utils.lua:391' 
+	Local variables:
+	 t = table: 0x197635f8  {key_append:lobc_rudolta, area:table: 0x199250f8, rarity:zayin, set:Abnormality}
+(8) Lua field 'func' at file 'indiv_jokers/rudolta.lua:20' (from mod with id LobotomyCorp)
+	Local variables:
+	 _card = nil
+(9) Lua method 'handle' at file 'engine/event.lua:57'
+	Local variables:
+	 self = table: 0x23f984c8  {start_timer:true, timer:TOTAL, blockable:true, trigger:after, func:function: 0x23f98460, delay:0.2, complete:false, time:1001.5350044095, blocking:true (more...)}
+	 _results = table: 0x1a03ad88  {blocking:true, pause_skip:false, time_done:true, completed:false}
+(10) Lua method 'update' at file 'engine/event.lua:215'
+	Local variables:
+	 self = table: 0x19970710  {queue_last_processed:334.73333333336, queues:table: 0x19970738, queue_dt:0.016666666666667, queue_timer:334.73510779549}
+	 dt = number: 0.00785238
+	 forced = nil
+	 (for generator) = C function: next
+	 (for state) = table: 0x19970738  {unlock:table: 0x19970828, galdur:table: 0x1973c408, other:table: 0x199708c8, tutorial:table: 0x19970878, base:table: 0x19970850, achievement:table: 0x199708a0 (more...)}
+	 (for control) = number: nan
+	 k = string: "base"
+	 v = table: 0x19970850  {1:table: 0x1988ea58, 2:table: 0x23f984c8, 3:table: 0x1e6af0a8, 4:table: 0x19e1e9b8, 5:table: 0x194802f8, 6:table: 0x1c8a8d98, 7:table: 0x19bb8038 (more...)}
+	 blocked = boolean: false
+	 i = number: 2
+	 results = table: 0x1a03ad88  {blocking:true, pause_skip:false, time_done:true, completed:false}
+(11) Lua upvalue 'gameUpdateRef' at file 'game.lua:2626'
+	Local variables:
+	 self = table: 0x190f8b98  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x1fef5420, F_ENGLISH_ONLY:false, HUD:table: 0x213e6bc8, sort_id:1439 (more...)}
+	 dt = number: 0.00785238
+	 http_resp = nil
+(12) Lua upvalue 'upd' at Steamodded file 'src/ui.lua:86' 
+	Local variables:
+	 self = table: 0x190f8b98  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x1fef5420, F_ENGLISH_ONLY:false, HUD:table: 0x213e6bc8, sort_id:1439 (more...)}
+	 dt = number: 0.00785238
+(13) Lua upvalue 'game_updateref' at file 'main.lua:6304'
+	Local variables:
+	 self = table: 0x190f8b98  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x1fef5420, F_ENGLISH_ONLY:false, HUD:table: 0x213e6bc8, sort_id:1439 (more...)}
+	 dt = number: 0.00785238
+(14) Lua method 'update' at file 'LobotomyCorp.lua:1910' (from mod with id LobotomyCorp)
+	Local variables:
+	 self = table: 0x190f8b98  {F_GUIDE:false, F_CRASH_REPORTS:false, F_QUIT_BUTTON:true, HUD_tags:table: 0x1fef5420, F_ENGLISH_ONLY:false, HUD:table: 0x213e6bc8, sort_id:1439 (more...)}
+	 dt = number: 0.00785238
+(15) Lua upvalue 'love_update_ref' at file 'main.lua:999'
+	Local variables:
+	 dt = number: 0.00785238
+(16) Lua upvalue 'oldupd' at file 'main.lua:4221'
+	Local variables:
+	 dt = number: 0.00785238
+(17) Lua field 'update' at file 'main.lua:6337'
+	Local variables:
+	 dt = number: 0.00785238
+(18) Lua function '?' at file 'main.lua:938' (best guess)
+(19) global C function 'xpcall'
+(20) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 909 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-05-05 08:15:21 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-0427a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.7.1
+Platform: Windows
+Steamodded Mods:
+    1: Lobotomy Corporation by Mysthaps [ID: LobotomyCorp, Version: 1.2.0c, Uses Lovely]
+    2: Too Many Decks by Squidguset, WaffleDevs [ID: SGTMD, Priority: 115, Version: 3.5.0, Uses Lovely]
+    3: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg-223 [ID: Talisman, Version: 2.2.0b, Uses Lovely]
+        Break Infinity: omeganum
+    4: Handy by SleepyG11 [ID: Handy, Version: 1.4.2, Uses Lovely]
+    5: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2, Uses Lovely]
+    6: Banner by SylviBlossom [ID: banner, Version: 1.1.1, Uses Lovely]
+    7: DebugPlus by WilsontheWolf [ID: DebugPlus, Version: 1.4.1, Uses Lovely]
+    8: Flower Pot by ItsFlowwey [ID: FlowerPot, Version: 0.8, Uses Lovely]
+Lovely Mods:

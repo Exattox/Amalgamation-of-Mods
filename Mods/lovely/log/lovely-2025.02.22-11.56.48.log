@@ -1,0 +1,134 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 72ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 14 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 6 patches to 'engine/controller.lua'
+INFO - [♥] Applied 13 patches to 'back.lua'
+INFO - [♥] Applied 6 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/node.lua'
+INFO - [♥] Applied 2 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 2 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 47 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'G.SPLASH_BACK:define_draw_steps({{\n    shader = \'splash\',\n    send = {\n        {name = \'time\', ref_table = G.TIMERS, ref_value = \'REAL\'},\n        {name = \'vort_speed\', val = 1},\n        {name = \'colour_1\', ref_table = G.C, ref_value = \'COLOUR1\'},\n        {name = \'colour_2\', ref_table = G.C, ref_value = \'WHITE\'},\n        {name = \'mid_flash\', val = 0},\n        {name = \'vort_offset\', val = (2*90.15315131*os.time())%100000},\n    }}})\n' on target 'game.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 35 patches to 'game.lua'
+INFO - [♥] Applied 1 patch to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minw = 1\\.5, minh = 0\\.4, r = 0\\.1, padding = 0\\.05, colour = G\\.C\\.WHITE\\}, nodes=\\{\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", padding = 0\\.03\\}, nodes=t\\}\\}\\}' on target 'functions/UI_definitions.lua' for regex patch from D6-Jokers-main\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'table.insert(t, create_toggle({label = localize(\'b_high_contrast_cards\'), ref_table = G.SETTINGS, ref_value = \'colourblind_option\', callback = G.FUNCS.refresh_contrast_mode}))' on target 'functions/UI_definitions.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 80 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '                if effects.jokers.level_up then\n                    level_up_hand(card, text)\n                end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card_eval_status_text(card, \'jokers\', nil, percent, nil, effects.jokers)' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if next(find_joker(\'Splash\')) then' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 54 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({ --Add bonus chips from this card\n                    trigger = \'before\',\n                    delay = delay,\n                    func = function()\n                    if extrafunc then extrafunc() end\n                    attention_text({\n                        text = text,\n                        scale = config.scale or 1,\n                        hold = delay - 0.2,\n                        backdrop_colour = colour,\n                        align = card_aligned,\n                        major = card,\n                        offset = {x = 0, y = y_off}\n                    })\n                    play_sound(sound, 0.8+percent*0.2, volume)\n                    if not extra or not extra.no_juice then\n                        card:juice_up(0.6, 0.1)\n                        G.ROOM.jiggle = G.ROOM.jiggle + 0.7\n                    end\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 115 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if G.ARGS.score_intensity.earned_score >= G.ARGS.score_intensity.required_score and G.ARGS.score_intensity.required_score > 0 then' on target 'functions/button_callbacks.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 49 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({trigger = \'after\',delay = 0.1,func = function() G.hand.highlighted[i]:set_ability(G.P_CENTERS[self.ability.consumeable.mod_conv]);return true end }))' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.debuff then\n    self.children.center:draw_shader(\'debuff\', nil, self.ARGS.send_to_shader)\n' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.consumeables.cards[i].ability.consumeable then' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 169 patches to 'card.lua'
+INFO - [♥] Applied 7 patches to 'cardarea.lua'
+INFO - [♥] Applied 31 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 2 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-02-22 11:56:54 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Processing Mod file (Legacy header): BadAppleJoker.lua
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Saving Mod Info: BadApple
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Saving Mod Info: Cardsauce
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-02-22 11:56:56 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-02-22 11:56:56 :: DEBUG :: DefaultLogger :: Loaded BadAppleJoker~
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons(), Card:load(), Game:start_run(), copy_card() and Card:remove() patched. Reason: Card Sleeve
+INFO - [G] 2025-02-22 11:56:56 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: card
+INFO - [G] 2025-02-22 11:56:56 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: UI_definitions
+INFO - [G] 2025-02-22 11:56:56 :: WARN  :: Atlas :: Object csau_odio has the same key as an existing object, not registering.
+INFO - [G] 2025-02-22 11:56:56 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-02-22 11:56:56 :: WARN  :: Atlas :: Detected duplicate register call on object csau_modicon
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-02-22 11:56:56 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.358 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0110] Injected Atlas in 5109.239 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0016] Injected Sound in 8.575 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0008] Injected Stake in 0.227 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.019 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0008] Injected ObjectType in 0.052 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0190] Injected Center in 1.862 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0008] Injected Undiscovered Sprite in 0.025 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0009] Injected Blind in 0.030 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0004] Injected Seal in 0.310 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0004] Injected Suit in 0.071 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0013] Injected Rank in 0.090 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0020] Injected DeckSkin in 0.171 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.085 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0023] Injected Challenge in 0.029 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0004] Injected Tag in 0.013 ms
+INFO - [G] 2025-02-22 11:57:01 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.069 ms
+INFO - [G] 2025-02-22 11:57:02 :: INFO  :: TIMER :: [0008] Injected Shader in 504.181 ms
+INFO - [G] 2025-02-22 11:57:02 :: INFO  :: TIMER :: [0001] Injected Keybind in 0.011 ms
+INFO - [G] 2025-02-22 11:57:02 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.070 ms
+INFO - [G] 2025-02-22 11:57:02 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 6.811 ms
+INFO - [G] 2025-02-22 11:57:02 :: INFO  :: TIMER :: [0057] Injected D6 Side in 0.263 ms
+INFO - [G] 2025-02-22 11:57:13 :: INFO  :: TIMER :: [0000] Injected Language in 0.002 ms
+INFO - [G] 2025-02-22 11:57:13 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.331 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0110] Injected Atlas in 5125.556 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0016] Injected Sound in 0.032 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0008] Injected Stake in 0.103 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0004] Injected Rarity in 0.018 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0008] Injected ObjectType in 0.093 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0190] Injected Center in 1.317 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0008] Injected Undiscovered Sprite in 0.012 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0009] Injected Blind in 0.023 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0004] Injected Seal in 0.884 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0004] Injected Suit in 0.062 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0013] Injected Rank in 0.045 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0020] Injected DeckSkin in 0.124 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0012] Injected PokerHand in 0.089 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0023] Injected Challenge in 0.026 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0004] Injected Tag in 0.017 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0004] Injected Sticker in 0.162 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0008] Injected Shader in 36.730 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0001] Injected Keybind in 0.007 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0000] Injected Achievement in 0.059 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 6.704 ms
+INFO - [G] 2025-02-22 11:57:18 :: INFO  :: TIMER :: [0057] Injected D6 Side in 0.303 ms
+INFO - [G] LONG DT @ 22: 0.1
+INFO - [G] LONG DT @ 12: 0.0820216
+INFO - [G] LONG DT @ 12: 0.06600034
+INFO - [G] LONG DT @ 12: 0.053185352

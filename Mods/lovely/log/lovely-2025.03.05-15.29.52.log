@@ -1,0 +1,1578 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'balatro-highest-priestess-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'DebugPlus-master', skipping it.
+INFO - [♥] Found .lovelyignore in 'JoyousSpring-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Kino-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'my_balatro_mods-main', skipping it.
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\CelesteCardCollection-main\\lovely\\card_credits.toml", ignoring it
+WARN - [♥] Unknown key `patches.9.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Magic-the-Jokering-main\\lovely\\override.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 97ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 16 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 7 patches to 'engine/controller.lua'
+INFO - [♥] Applied 17 patches to 'back.lua'
+INFO - [♥] Applied 8 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/node.lua'
+INFO - [♥] Applied 2 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 53 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'local card = Card(G.shop_vouchers.T.x + G.shop_vouchers.T.w/2,\nG.shop_vouchers.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[G.GAME.current_round.voucher],{bypass_discovery_center = true, bypass_discovery_ui = true})\n' on target 'game.lua' for pattern patch from Maximus-main\lovely\horoscope.toml resulted in no matches
+WARN - [♥] Pattern 'G.SPLASH_BACK:define_draw_steps({{\n    shader = \'splash\',\n    send = {\n        {name = \'time\', ref_table = G.TIMERS, ref_value = \'REAL\'},\n        {name = \'vort_speed\', val = 1},\n        {name = \'colour_1\', ref_table = G.C, ref_value = \'COLOUR1\'},\n        {name = \'colour_2\', ref_table = G.C, ref_value = \'WHITE\'},\n        {name = \'mid_flash\', val = 0},\n        {name = \'vort_offset\', val = (2*90.15315131*os.time())%100000},\n    }}})\n' on target 'game.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 61 patches to 'game.lua'
+INFO - [♥] Applied 5 patches to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)return \\{n=G\\.UIT\\.ROOT, config = \\{align = \'cm\', colour = G\\.C\\.CLEAR\\}, nodes=\\{\\n[\\s\\S]{8}\\{n=G\\.UIT\\.C, config=\\{align = \"cm\"' on target 'functions/UI_definitions.lua' for regex patch from D6-Jokers-main\lovely\main.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minw = 1\\.5, minh = 0\\.4, r = 0\\.1, padding = 0\\.05, colour = G\\.C\\.WHITE\\}, nodes=\\{\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", padding = 0\\.03\\}, nodes=t\\}\\}\\}' on target 'functions/UI_definitions.lua' for regex patch from D6-Jokers-main\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'if polled_rate > check_rate and polled_rate <= check_rate + v.val then\n    local card = create_card(v.type, area, nil, nil, nil, nil, nil, \'sho\')\n' on target 'functions/UI_definitions.lua' for pattern patch from Maximus-main\lovely\coupon.toml resulted in no matches
+WARN - [♥] Pattern 'if polled_rate > check_rate and polled_rate <= check_rate + v.val then\n    local card = create_card(v.type, area, nil, nil, nil, nil, nil, \'sho\')\n' on target 'functions/UI_definitions.lua' for pattern patch from Maximus-main\lovely\modifiers.toml resulted in no matches
+WARN - [♥] Pattern 'table.insert(t, create_toggle({label = localize(\'b_high_contrast_cards\'), ref_table = G.SETTINGS, ref_value = \'colourblind_option\', callback = G.FUNCS.refresh_contrast_mode}))' on target 'functions/UI_definitions.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 103 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex 'game_over = false\n(?<indent>[\\t ]*)end\n[\\t ]*for i = 1, #G.jokers.cards do' on target 'functions/state_events.lua' for regex patch from Magic-the-Jokering-main\lovely\override.toml resulted in no matches
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips*mult),\n' on target 'functions/state_events.lua' for pattern patch from Maximus-main\lovely\modifiers.toml resulted in no matches
+WARN - [♥] Pattern '    for k, v in ipairs(G.play.cards) do\n        if (not v.shattered) and (not v.destroyed) then\n            draw_card(G.play,G.discard, it*100/play_count,\'down\', false, v)\n            it = it + 1\n        end\n    end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern '                if effects.jokers.level_up then\n                    level_up_hand(card, text)\n                end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card_eval_status_text(card, \'jokers\', nil, percent, nil, effects.jokers)' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if next(find_joker(\'Splash\')) then' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 79 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'colours = {(G.GAME.hands[_c.config.hand_type].level==1 and G.C.UI.TEXT_DARK or G.C.HAND_LEVELS[math.min(7, G.GAME.hands[_c.config.hand_type].level)])}' on target 'functions/common_events.lua' for pattern patch from balatro-victins-collection-0.0.0-alpha.0.0\lovely\hand_level_colours.toml resulted in no matches
+WARN - [♥] Pattern '        if specific_vars.bonus_chips then\n            localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {specific_vars.bonus_chips}}\n        end\n' on target 'functions/common_events.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '        if _c.name ~= \'Stone Card\' and ((specific_vars and specific_vars.bonus_chips) or (cfg.bonus ~= 0 and cfg.bonus)) then\n            localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {((specific_vars and specific_vars.bonus_chips) or cfg.bonus)}}\n        end\n' on target 'functions/common_events.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'elseif card.jimbo then' on target 'functions/common_events.lua' for pattern patch from balatro-victins-collection-0.0.0-alpha.0.0\lovely\zodiac.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.O, config={object = DynaText({string = {\' \'..localize(\'ph_mr_bones\')..\' \'}, colours = {G.C.FILTER}, shadow = true, pop_in = 0, scale = 0.5*scale, silent = true})}}' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({ --Add bonus chips from this card\n                    trigger = \'before\',\n                    delay = delay,\n                    func = function()\n                    if extrafunc then extrafunc() end\n                    attention_text({\n                        text = text,\n                        scale = config.scale or 1,\n                        hold = delay - 0.2,\n                        backdrop_colour = colour,\n                        align = card_aligned,\n                        major = card,\n                        offset = {x = 0, y = y_off}\n                    })\n                    play_sound(sound, 0.8+percent*0.2, volume)\n                    if not extra or not extra.no_juice then\n                        card:juice_up(0.6, 0.1)\n                        G.ROOM.jiggle = G.ROOM.jiggle + 0.7\n                    end\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if specific_vars.nominal_chips then\n    localize{type = \'other\', key = \'card_chips\', nodes = desc_nodes, vars = {specific_vars.nominal_chips}}\nend\nif specific_vars.bonus_chips then\n    localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {specific_vars.bonus_chips}}\nend\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 152 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if not G.from_boss_tag then ease_dollars(-10) end
+WARN - [♥] ' on target 'functions/button_callbacks.lua' for pattern patch from JokerHub-main\lovely.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if G.ARGS.score_intensity.earned_score >= G.ARGS.score_intensity.required_score and G.ARGS.score_intensity.required_score > 0 then' on target 'functions/button_callbacks.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 61 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from CelesteCardCollection-main\lovely\j_booster.toml resulted in no matches
+WARN - [♥] Pattern '        loc_vars = { playing_card = not not self.base.colour, value = self.base.value, suit = self.base.suit, colour = self.base.colour,\n                    nominal_chips = self.base.nominal > 0 and self.base.nominal or nil,\n                    bonus_chips = (self.ability.bonus + (self.ability.perma_bonus or 0)) > 0 and (self.ability.bonus + (self.ability.perma_bonus or 0)) or nil,\n' on target 'card.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'for k, v in pairs(G.playing_cards) do\n    if v.config.center == G.P_CENTERS.m_steel then self.ability.steel_tally = self.ability.steel_tally+1 end\nend\n' on target 'card.lua' for pattern patch from SharrisMod-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'context.other_card.ability.name == \'Gold Card\' then\n' on target 'card.lua' for pattern patch from SharrisMod-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'bonus_chips = (self.ability.bonus + (self.ability.perma_bonus or 0)) > 0 and (self.ability.bonus + (self.ability.perma_bonus or 0)) or nil,\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\bonus_mult.toml resulted in no matches
+WARN - [♥] Pattern '--If the card has a front, draw that next\n    if self.children.front and (self.ability.delayed or (self.ability.effect ~= \'Stone Card\' and not self.config.center.replace_base_card)) then\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\hammer_and_chisel.toml resulted in no matches
+WARN - [♥] Pattern 'if self.area and self.ability.couponed and (self.area == G.shop_jokers or self.area == G.shop_booster) then self.cost = 0 end\nself.sell_cost_label = self.facing == \'back\' and \'?\' or self.sell_cost\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\shop.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from Maximus-main\lovely\trick_or_treat.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from Prism-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur-master\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({trigger = \'after\',delay = 0.1,func = function() G.hand.highlighted[i]:set_ability(G.P_CENTERS[self.ability.consumeable.mod_conv]);return true end }))' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.debuff then\n    self.children.center:draw_shader(\'debuff\', nil, self.ARGS.send_to_shader)\n' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.consumeables.cards[i].ability.consumeable then' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Black Hole\' then' on target 'card.lua' for pattern patch from GARBSHIT-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'for i = 1, self.ability.extra.destroy do destroyed_cards[#destroyed_cards+1] = temp_hand[i] end' on target 'card.lua' for pattern patch from GARBSHIT-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 292 patches to 'card.lua'
+INFO - [♥] Applied 13 patches to 'cardarea.lua'
+WARN - [♥] Pattern 'if self.name == \'The Mark\' and card:is_face(true) then' on target 'blind.lua' for pattern patch from CelesteCardCollection-main\lovely\bl_suitflip.toml resulted in no matches
+INFO - [♥] Applied 41 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 3 patches to 'challenges.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/ui.lua"]'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-03-05 15:29:58 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] 2025-03-05 15:30:00 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:00 :: TRACE :: Loader :: Processing Mod file (Legacy header): BadAppleJoker.lua
+INFO - [G] 2025-03-05 15:30:00 :: TRACE :: Loader :: Saving Mod Info: BadApple
+INFO - [G] 2025-03-05 15:30:00 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:00 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: Cardsauce
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: CelesteCardCollection
+INFO - [G] 2025-03-05 15:30:01 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/CelesteCardCollection-main/settings.json, ignoring: [lovely json "libs/json/json.lua"]:185: expected string for key at line 3 col 57
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): CodexArcanum.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: CodexArcanum
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus-master/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-05 15:30:01 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus-master/dev/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): EvaJokers.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: EvaJokers
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: GARBPACK
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): JestersPrivilege.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: JestersPrivilege
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: sdm0sstuff
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/SnoresvilleTurbulentJokers/SnoresvilleTurbulentJokers.json, ignoring: [SMODS _ "src/loader.lua"]:105: attempt to call method 'gmatch' (a nil value)
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: THREEDEPOSIT
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: unsorted
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): DnDJ.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: dndj
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: JoinTheCrowd
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): 5_legendary_challenges.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: legendaryChallenges
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Abilities.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetmmaAbilities
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Jokers.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetmmaJokers
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Spells.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetmmaSpells
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Voucher_Pack.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetmmaVoucherPack
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Vouchers.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetmmaVouchers
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Processing Mod file (Legacy header): better_vouchers_this_run_ui.lua
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Saving Mod Info: BetterVouchersThisRunUI
+INFO - [G] 2025-03-05 15:30:01 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/paperback-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Ignis with the slug c_alchemy_ignis have been registered at the id 2.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Aqua with the slug c_alchemy_aqua have been registered at the id 3.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Terra with the slug c_alchemy_terra have been registered at the id 4.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Aero with the slug c_alchemy_aero have been registered at the id 5.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Quicksilver with the slug c_alchemy_quicksilver have been registered at the id 6.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Salt with the slug c_alchemy_salt have been registered at the id 7.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Sulfur with the slug c_alchemy_sulfur have been registered at the id 8.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Phosphorus with the slug c_alchemy_phosphorus have been registered at the id 9.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Bismuth with the slug c_alchemy_bismuth have been registered at the id 10.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Cobalt with the slug c_alchemy_cobalt have been registered at the id 11.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Arsenic with the slug c_alchemy_arsenic have been registered at the id 12.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Antimony with the slug c_alchemy_antimony have been registered at the id 13.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Soap with the slug c_alchemy_soap have been registered at the id 14.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Manganese with the slug c_alchemy_manganese have been registered at the id 15.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Wax with the slug c_alchemy_wax have been registered at the id 16.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Borax with the slug c_alchemy_borax have been registered at the id 17.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Glass with the slug c_alchemy_glass have been registered at the id 18.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Magnet with the slug c_alchemy_magnet have been registered at the id 19.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Gold with the slug c_alchemy_gold have been registered at the id 20.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Silver with the slug c_alchemy_silver have been registered at the id 21.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Oil with the slug c_alchemy_oil have been registered at the id 22.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Acid with the slug c_alchemy_acid have been registered at the id 23.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Brimstone with the slug c_alchemy_brimstone have been registered at the id 24.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Alchemical named Uranium with the slug c_alchemy_uranium have been registered at the id 25.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_1 have been registered at the id 34.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_2 have been registered at the id 35.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_3 have been registered at the id 36.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_4 have been registered at the id 37.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Jumbo Alchemy Pack with the slug p_alchemy_jumbo_1 have been registered at the id 38.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Jumbo Alchemy Pack with the slug p_alchemy_jumbo_2 have been registered at the id 39.
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: The Booster named Mega Alchemy Pack with the slug p_alchemy_mega_1 have been registered at the id 40.
+INFO - [G] betmma config not found
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: Loaded BadAppleJoker~
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons(), Card:load(), Game:start_run(), copy_card() and Card:remove() patched. Reason: Card Sleeve
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod BetmmaAbilities was unable to load: 
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod BetmmaSpells was unable to load: Missing Dependencies: 1: BetmmaAbilities>=1.0.3
+
+
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: UI_definitions
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Object csau_odio has the same key as an existing object, not registering.
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object csau_modicon
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod DebugPlus was unable to load: 
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Sound :: Object garb_surge has the same key as an existing object, not registering.
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Sound :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod HighestPriestess was unable to load: 
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod JoyousSpring was unable to load: 
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: aries
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: taurus
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: gemini
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: cancer
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: leo
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: virgo
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: libra
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: scorpio
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: sagittarius
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: capricorn
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: aquarius
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded horoscope: pisces
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded booster: horoscope_normal_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded booster: horoscope_normal_2
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded booster: horoscope_jumbo_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded booster: horoscope_mega_1
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: fortune_cookie
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: poindexter
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: abyss
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: war
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: microwave
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: combo_breaker
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: faded
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: old_man_jimbo
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: joker+
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: normal
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: streaker
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: jobber
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: astigmatism
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: perspective
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: harmony
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: impractical
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: trick_or_treat
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: pessimistic
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: chef
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: leftovers
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: refrigerator
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: hopscotch
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: secret_society
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: bullseye
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: hammer_and_chisel
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: four_leaf_clover
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: soyjoke
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: clown_car
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: gambler
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: 4d
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: dark_room
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: virus
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: man_in_the_mirror
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: unpleasant_gradient
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: random_encounter
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: jackpot
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: bell_curve
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: loaded_gun
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: coupon
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: loony
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: lazy
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: salt_circle
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: light_show
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: monk
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: marco_polo
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: go_fish
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: sleuth
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: dont_mind_if_i_do
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: guillotine
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: power_creep
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: space_race
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: poet
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: hedonist
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: zombie
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: coronation
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: soil
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: stop_sign
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: chihuahua
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: ledger
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: bootleg
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: group_chat
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: minimalist
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: breadsticks
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: glass_cannon
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: gravity
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: fog
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: stone_thrower
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: four_course_meal
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: memory_game
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: rock_slide
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: first_aid_kit
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: hypeman
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: game_review
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: ocham
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: schrodinger
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded joker: chekhov
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: launch_code
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: warp_drive
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: sharp_suit
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: best_dressed
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: shield
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded voucher: guardian
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: 52_commandments
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: crusaders
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: overgrowth
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: square
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: gambling
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: target_practice
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: biggest_loser
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: picky
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: fashion
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: all_stars
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: p2w
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: killer
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: drain
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded challenge: thought
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded deck: sixth_finger
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded deck: nirvana
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded deck: nuclear
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand part: _6
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand part: s_flush
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand part: s_straight
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: three_pair
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: double_triple
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: 6oak
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: s_straight
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: s_flush
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: house_party
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: f_three_pair
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: f_double_triple
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: s_straight_f
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: f_party
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded hand type: f_6oak
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: microscopii
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: wasp
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: pegasi
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: trappist
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: corot
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: poltergeist
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: gliese
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: cancri
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: proxima
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: phobetor
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded consumable: kepler
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded blind: rot
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded blind: grinder
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Maximus :: Loaded tag: star
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: Loaded Three Deposit Mod
+INFO - [G] 2025-03-05 15:30:01 :: TRACE :: Loader :: Mod kino was unable to load: 
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_atlas
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_kiki
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_power
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_tiny
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_chromatic
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_lotus
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: calling_card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: quick_fix
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: sacrificial_lamb
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: wish_you_were_here
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: stamp
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: solar_system
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: furioso
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: pride_flag
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: pool_table
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: summoning_circle
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: hole_in_one
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: derecho
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: forgery
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: skydiver
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: solemn_lament
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: ghost_cola
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: mismatched_sock
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: shopping_center
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: union_card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: nachos
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: jester_of_nihil
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: complete_breakfast
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: reference_card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: crispy_taco
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: soft_taco
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: prince_of_darkness
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: black_rainbows
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: emergency_broadcast
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: triple_moon_goddess
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: wild_prize
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: bicycle
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: grand_strategy
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: great_wave
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: let_it_happen
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: dreamsicle
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: popsicle_stick
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: cakepop
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: pop_stick
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: caramel_apple
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: pointy_stick
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: charred_marshmallow
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: sticky_stick
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: paranoia
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: subterfuge
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: unholy_alliance
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: cherry_blossoms
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: blue_bonnets
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: autumn_leaves
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: evergreens
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: river
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: moribund
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: jimbo_adventure
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: joker_cookie
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: the_world
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: meeple
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: basic_energy
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: coffee
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: cream_liqueur
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: big_misser
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: jestrica
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: epic_sauce
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: find_jimbo
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: champagne
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: apple
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: alert
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: legacy
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: backpack
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: Paperback :: Loaded joker: pocket_pair
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded : colours
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: misc_functions
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: game
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: UI_definitions
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: state_events
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: cardarea
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: blind
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: common_events
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Up Your Sleeve
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Ouroboros
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Moody
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: The One
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Champion
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Champions Belt
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Lvl Death
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Gas Lamp
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Joker :: Object j_vic_the_one has the same key as an existing object, not registering.
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Joker :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: The One
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Paradise Parrot
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Skyscraper
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Pippi Panini
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Yurika Harako
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Syzygy
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Stheno
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Tower Into Space
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Worm
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Rock
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Bell
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Spin
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Bottle
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Loop
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Dagger
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Prion
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Gold
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Ribbon
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Patriarch
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded consumable: Short Rest
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: broker
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: rekoj
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: da_joki
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: orb_of_confusion
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: going_viral
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: snowball_effect
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: face_value
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: twins
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: union_member_card
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: gambit
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: forbidden_fruit
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: demon_core
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: last_hurrah
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: garbage_bag
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: JokerHub :: Loaded joker: hudson
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object SharrisMod_sharrijokers
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: [CCC] Jokers loaded
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: [CCC] Decks loaded
+INFO - [G] 2025-03-05 15:30:01 :: DEBUG :: DefaultLogger :: [CCC] Vouchers loaded
+INFO - [G] 2025-03-05 15:30:01 :: WARN  :: Atlas :: Detected duplicate register call on object ccc_modicon
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: TIMER :: [0001] Injected Language in 1.074 ms
+INFO - [G] 2025-03-05 15:30:01 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.664 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0371] Injected Atlas in 7280.061 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0040] Injected Sound in 18.416 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0010] Injected Stake in 0.554 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0007] Injected Rarity in 0.031 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0016] Injected ObjectType in 0.120 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [1211] Injected Center in 8.373 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0012] Injected Undiscovered Sprite in 0.017 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0031] Injected Blind in 0.155 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0011] Injected Seal in 0.921 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0006] Injected Suit in 0.350 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0021] Injected Rank in 0.207 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0030] Injected DeckSkin in 0.525 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0023] Injected PokerHand in 0.165 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0046] Injected Challenge in 0.284 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0009] Injected Tag in 0.037 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0007] Injected Sticker in 0.193 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0009] Injected Shader in 106.297 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0001] Injected Keybind in 0.009 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0001] Injected Achievement in 0.092 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0002] Injected nil in 0.010 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0021] Injected Draw Step in 0.110 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 38.426 ms
+INFO - [G] 2025-03-05 15:30:09 :: INFO  :: TIMER :: [0057] Injected D6 Side in 0.291 ms
+INFO - [G] LONG DT @ 353: 0.058724343682233
+INFO - [G] LONG DT @ 353: 0.050674174945792
+INFO - [G] LONG DT @ 358: 0.086980522848505
+INFO - [G] LONG DT @ 358: 0.074980398278795
+INFO - [G] LONG DT @ 358: 0.065183858623037
+INFO - [G] LONG DT @ 358: 0.057460846898431
+INFO - [G] LONG DT @ 358: 0.051172257518745
+INFO - [G] LONG DT @ 362: 0.083790415429394
+INFO - [G] LONG DT @ 362: 0.072918752343517
+INFO - [G] LONG DT @ 362: 0.063927141874812
+INFO - [G] LONG DT @ 362: 0.056742473499854
+INFO - [G] LONG DT @ 363: 0.050606918799885
+INFO - [G] LONG DT @ 384: 0.072412998720821
+INFO - [G] LONG DT @ 384: 0.064054998976655
+INFO - [G] LONG DT @ 384: 0.056651499181325
+INFO - [G] LONG DT @ 384: 0.050524099345066
+INFO - [G] LONG DT @ 393: 0.062159402402024
+INFO - [G] LONG DT @ 393: 0.052660821921625
+INFO - [G] LONG DT @ 401: 0.074860736526576
+INFO - [G] LONG DT @ 401: 0.065024229221264
+INFO - [G] LONG DT @ 401: 0.056820163377005
+INFO - [G] LONG DT @ 401: 0.050361710701606
+INFO - [G] LONG DT @ 416: 0.062652959348995
+INFO - [G] LONG DT @ 416: 0.053241787479192
+INFO - [G] LONG DT @ 426: 0.07082910327819
+INFO - [G] LONG DT @ 426: 0.061852402622552
+INFO - [G] LONG DT @ 426: 0.054483002098041
+INFO - [G] LONG DT @ 434: 0.070597573211233
+INFO - [G] LONG DT @ 434: 0.061894858568987
+INFO - [G] LONG DT @ 434: 0.05490042685519
+INFO - [G] LONG DT @ 439: 0.088616229771501
+INFO - [G] LONG DT @ 439: 0.076248403817201
+INFO - [G] LONG DT @ 439: 0.066252663053761
+INFO - [G] LONG DT @ 439: 0.058194810443002
+INFO - [G] LONG DT @ 439: 0.051733908354405
+INFO - [G] LONG DT @ 446: 0.074499173618602
+INFO - [G] LONG DT @ 446: 0.06438643889488
+INFO - [G] LONG DT @ 446: 0.056510551115907
+INFO - [G] LONG DT @ 446: 0.050212940892733
+INFO - [G] LONG DT @ 455: 0.075435054160962
+INFO - [G] LONG DT @ 455: 0.065539883328767
+INFO - [G] LONG DT @ 455: 0.057426586663018
+INFO - [G] LONG DT @ 455: 0.051559689330411
+INFO - [G] LONG DT @ 464: 0.069344348541391
+INFO - [G] LONG DT @ 464: 0.060449678833105
+INFO - [G] LONG DT @ 464: 0.053167803066489
+INFO - [G] LONG DT @ 474: 0.077411696498193
+INFO - [G] LONG DT @ 474: 0.06712027719855
+INFO - [G] LONG DT @ 474: 0.058877801758861
+INFO - [G] LONG DT @ 474: 0.052302501407081
+INFO - [G] LONG DT @ 481: 0.072432567507974
+INFO - [G] LONG DT @ 481: 0.063472034006395
+INFO - [G] LONG DT @ 481: 0.056477127205107
+INFO - [G] LONG DT @ 481: 0.050581521764088
+INFO - [G] LONG DT @ 485: 0.071556606878618
+INFO - [G] LONG DT @ 485: 0.066557265502901
+INFO - [G] LONG DT @ 485: 0.058782992402331
+INFO - [G] LONG DT @ 485: 0.052439133921862
+INFO - [G] LONG DT @ 490: 0.059854380149496
+INFO - [G] LONG DT @ 490: 0.051489084119595
+INFO - [G] LONG DT @ 495: 0.089704607252497
+INFO - [G] LONG DT @ 495: 0.076962565801987
+INFO - [G] LONG DT @ 495: 0.066774472641585
+INFO - [G] LONG DT @ 495: 0.058609838113263
+INFO - [G] LONG DT @ 495: 0.05209155049061
+INFO - [G] LONG DT @ 501: 0.071206649878463
+INFO - [G] LONG DT @ 501: 0.061964659902765
+INFO - [G] LONG DT @ 501: 0.054568047922199
+INFO - [G] LONG DT @ 508: 0.07419758870138
+INFO - [G] LONG DT @ 508: 0.064523690961106
+INFO - [G] LONG DT @ 508: 0.057012312768901
+INFO - [G] LONG DT @ 508: 0.051013290215107
+INFO - [G] LONG DT @ 515: 0.073764469735571
+INFO - [G] LONG DT @ 515: 0.064595255788452
+INFO - [G] LONG DT @ 515: 0.057080304630772
+INFO - [G] LONG DT @ 515: 0.051069403704627
+INFO - [G] LONG DT @ 531: 0.076303098042189
+INFO - [G] LONG DT @ 531: 0.065979318433734
+INFO - [G] LONG DT @ 531: 0.057825934747007
+INFO - [G] LONG DT @ 531: 0.051276767797599
+INFO - [G] LONG DT @ 532: 0.057381451253758
+INFO - [G] LONG DT @ 542: 0.067720508898178
+INFO - [G] LONG DT @ 542: 0.059011787118551
+INFO - [G] LONG DT @ 542: 0.052831629694834
+INFO - [G] LONG DT @ 553: 0.053928437873647
+INFO - [G] LONG DT @ 565: 0.074313317199186
+INFO - [G] LONG DT @ 565: 0.063993453759362
+INFO - [G] LONG DT @ 565: 0.055593663007491
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:11 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 582: 0.081616887294517
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 582: 0.070482949835618
+INFO - [G] LONG DT @ 582: 0.061119179868498
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 582: 0.054095523894795
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:13 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] LONG DT @ 585: 0.062010090871426
+INFO - [G] LONG DT @ 585: 0.052672752697152
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:18 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:19 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Discarded? 2
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:21 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 15:40:22 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:22 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:22 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:22 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:22 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:23 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] LONG DT @ 594: 0.072006002086209
+INFO - [G] LONG DT @ 594: 0.062882941668963
+INFO - [G] LONG DT @ 594: 0.055106093335169
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:26 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 602: 0.057872939423266
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:34 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Discarded? 3
+INFO - [G] 2025-03-05 15:40:35 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 625: 0.087289501431374
+INFO - [G] LONG DT @ 625: 0.075017081145099
+INFO - [G] LONG DT @ 625: 0.065022444916082
+INFO - [G] LONG DT @ 625: 0.057000675932864
+INFO - [G] LONG DT @ 625: 0.050615480746292
+INFO - [G] LONG DT @ 627: 0.050199076336122
+INFO - [G] LONG DT @ 635: 0.070697481642414
+INFO - [G] LONG DT @ 635: 0.062277765313935
+INFO - [G] LONG DT @ 635: 0.054961572251147
+INFO - [G] LONG DT @ 651: 0.091179972395028
+INFO - [G] LONG DT @ 651: 0.077721317916032
+INFO - [G] LONG DT @ 651: 0.066934194332818
+INFO - [G] LONG DT @ 651: 0.058339275466257
+INFO - [G] LONG DT @ 652: 0.05147120037299
+INFO - [G] LONG DT @ 660: 0.070869221612399
+INFO - [G] LONG DT @ 660: 0.061667297289922
+INFO - [G] LONG DT @ 660: 0.054737637831937
+INFO - [G] LONG DT @ 669: 0.088685856719421
+INFO - [G] LONG DT @ 669: 0.075756685375539
+INFO - [G] LONG DT @ 670: 0.065402548300439
+INFO - [G] LONG DT @ 670: 0.05725521864034
+INFO - [G] LONG DT @ 670: 0.050614454912287
+INFO - [G] LONG DT @ 678: 0.056017470180673
+INFO - [G] LONG DT @ 701: 0.071313344734362
+INFO - [G] LONG DT @ 701: 0.062236375787505
+INFO - [G] LONG DT @ 701: 0.054996040629998
+INFO - [G] LONG DT @ 711: 0.073844451138412
+INFO - [G] LONG DT @ 711: 0.064240560910718
+INFO - [G] LONG DT @ 711: 0.056623228728585
+INFO - [G] LONG DT @ 711: 0.050552662982854
+INFO - [G] LONG DT @ 717: 0.053196318217484
+INFO - [G] LONG DT @ 721: 0.075964688284711
+INFO - [G] LONG DT @ 721: 0.066041830627783
+INFO - [G] LONG DT @ 721: 0.058043704502223
+INFO - [G] LONG DT @ 721: 0.051625883601774
+INFO - [G] LONG DT @ 731: 0.079623407606754
+INFO - [G] LONG DT @ 731: 0.069039666085399
+INFO - [G] LONG DT @ 731: 0.060838652868333
+INFO - [G] LONG DT @ 731: 0.053916982294657
+INFO - [G] LONG DT @ 747: 0.09656870901224
+INFO - [G] LONG DT @ 747: 0.082399107209808
+INFO - [G] LONG DT @ 747: 0.070916185767838
+INFO - [G] LONG DT @ 748: 0.062041668614264
+INFO - [G] LONG DT @ 748: 0.054835914891425
+INFO - [G] LONG DT @ 757: 0.093008951111135
+INFO - [G] LONG DT @ 757: 0.079203620888896
+INFO - [G] LONG DT @ 757: 0.068157756711132
+INFO - [G] LONG DT @ 757: 0.059332025368907
+INFO - [G] LONG DT @ 757: 0.052413640295109
+INFO - [G] LONG DT @ 766: 0.089353572276323
+INFO - [G] LONG DT @ 766: 0.07778711782106
+INFO - [G] LONG DT @ 766: 0.067627034256839
+INFO - [G] LONG DT @ 766: 0.059048047405459
+INFO - [G] LONG DT @ 767: 0.052091777924367
+INFO - [G] LONG DT @ 780: 0.093424808342116
+INFO - [G] LONG DT @ 780: 0.07953932667369
+INFO - [G] LONG DT @ 780: 0.068434981338947
+INFO - [G] LONG DT @ 780: 0.059346825071175
+INFO - [G] LONG DT @ 780: 0.052272020056922
+INFO - [G] LONG DT @ 795: 0.074113426200991
+INFO - [G] LONG DT @ 795: 0.06424186096078
+INFO - [G] LONG DT @ 795: 0.056200888768628
+INFO - [G] LONG DT @ 810: 0.06953695219061
+INFO - [G] LONG DT @ 810: 0.06076712175249
+INFO - [G] LONG DT @ 810: 0.053603957401992
+INFO - [G] LONG DT @ 818: 0.065405872889549
+INFO - [G] LONG DT @ 818: 0.055349598311631
+INFO - [G] LONG DT @ 822: 0.054723650786725
+INFO - [G] LONG DT @ 831: 0.091413480972714
+INFO - [G] LONG DT @ 831: 0.078951604778157
+INFO - [G] LONG DT @ 831: 0.068759503822527
+INFO - [G] LONG DT @ 831: 0.060426083058025
+INFO - [G] LONG DT @ 831: 0.053547306446426
+INFO - [G] LONG DT @ 840: 0.080262649102393
+INFO - [G] LONG DT @ 840: 0.069540459281915
+INFO - [G] LONG DT @ 840: 0.06098928742554
+INFO - [G] LONG DT @ 840: 0.053989989940417
+INFO - [G] LONG DT @ 844: 0.051031215364581
+INFO - [G] LONG DT @ 853: 0.069872819530777
+INFO - [G] LONG DT @ 854: 0.060679575624628
+INFO - [G] LONG DT @ 854: 0.053347500499702
+INFO - [G] LONG DT @ 871: 0.070096331148862
+INFO - [G] LONG DT @ 871: 0.060855544919094
+INFO - [G] LONG DT @ 871: 0.053489175935261
+INFO - [G] LONG DT @ 884: 0.076808974226583
+INFO - [G] LONG DT @ 884: 0.066439179381259
+INFO - [G] LONG DT @ 884: 0.058158323505015
+INFO - [G] LONG DT @ 884: 0.05147509880401
+INFO - [G] LONG DT @ 894: 0.078555995473283
+INFO - [G] LONG DT @ 894: 0.06778533637861
+INFO - [G] LONG DT @ 894: 0.059244989102892
+INFO - [G] LONG DT @ 894: 0.052372451282325
+INFO - [G] LONG DT @ 903: 0.068925307245983
+INFO - [G] LONG DT @ 903: 0.060117045796773
+INFO - [G] LONG DT @ 903: 0.052896096637437
+INFO - [G] LONG DT @ 943: 0.052155916770928
+INFO - [G] 2025-03-05 15:51:44 :: DEBUG :: DefaultLogger :: Defeated Dagger!
+INFO - [G] 2025-03-05 15:51:44 :: DEBUG :: DefaultLogger :: Stabbing!
+INFO - [G] 2025-03-05 15:54:00 :: DEBUG :: DefaultLogger :: Setting Final Patriarch when there are no Patriarch Blinds
+INFO - [G] 2025-03-05 15:54:00 :: DEBUG :: DefaultLogger :: Original blind is bl_vic_final_patriarch
+INFO - [G] 2025-03-05 15:54:00 :: DEBUG :: DefaultLogger :: Next blind is bl_hook
+INFO - [G] 2025-03-05 15:54:00 :: DEBUG :: DefaultLogger :: Finish setting Final Patriarch when there are no Patriarch Blinds
+INFO - [G] LONG DT @ 1459: 0.052380444563255
+INFO - [G] 2025-03-05 16:09:55 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:55 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:55 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:55 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:55 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:56 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:09:57 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:03 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:04 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:07 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:11 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:12 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-05 16:10:13 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 459: 0.050976980853227
+INFO - [G] 2025-03-05 16:27:49 :: DEBUG :: DefaultLogger :: Defeated Dagger!
+INFO - [G] 2025-03-05 16:27:49 :: DEBUG :: DefaultLogger :: Stabbing!
+INFO - [G] LONG DT @ 1766: 0.053094804846485
+INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
+INFO - [G] LONG DT @ 98: 0.075369435144824
+INFO - [G] LONG DT @ 98: 0.065462408115595
+INFO - [G] LONG DT @ 98: 0.05715064649253
+INFO - [G] LONG DT @ 98: 0.050529197194157
+INFO - [G] LONG DT @ 104: 0.087718683838443
+INFO - [G] LONG DT @ 104: 0.075172407070622
+INFO - [G] LONG DT @ 104: 0.065340085656542
+INFO - [G] LONG DT @ 104: 0.057681768525252
+INFO - [G] LONG DT @ 104: 0.051336714820135
+INFO - [G] LONG DT @ 109: 0.072883153191335
+INFO - [G] LONG DT @ 109: 0.063869822553063
+INFO - [G] LONG DT @ 109: 0.056531798042548
+INFO - [G] LONG DT @ 109: 0.05101033843411
+INFO - [G] LONG DT @ 115: 0.072808590584313
+INFO - [G] LONG DT @ 115: 0.064040492467345
+INFO - [G] LONG DT @ 115: 0.056070133973733
+INFO - [G] LONG DT @ 115: 0.050023467179255
+INFO - [G] LONG DT @ 119: 0.051568962028913
+INFO - [G] LONG DT @ 128: 0.081107936910907
+INFO - [G] LONG DT @ 128: 0.069466889528823
+INFO - [G] LONG DT @ 128: 0.060313911622777
+INFO - [G] LONG DT @ 128: 0.05306532929855

@@ -1,0 +1,1 @@
+=[SMODS Cryptid "lib/content.lua"]

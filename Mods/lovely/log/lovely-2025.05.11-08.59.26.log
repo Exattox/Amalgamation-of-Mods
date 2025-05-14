@@ -1,0 +1,481 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'Kino', skipping it.
+INFO - [♥] Found .lovelyignore in 'SauKhongHuDecks', skipping it.
+WARN - [♥] Unknown key `patches.21.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Cryptid\\lovely\\code.toml", ignoring it
+WARN - [♥] Unknown key `patches.18.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\HandyBalatro\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.4.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+WARN - [♥] Unknown key `patches.4.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+WARN - [♥] Unknown key `patches.5.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+WARN - [♥] Unknown key `patches.5.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+WARN - [♥] Unknown key `patches.6.?.overwrite` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+WARN - [♥] Unknown key `patches.6.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Yggdrasil\\lovely\\prevent_crash.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 97ms
+INFO - [♥] Applied 1 patch to 'conf.lua'
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 33 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 18 patches to 'engine/controller.lua'
+INFO - [♥] Applied 18 patches to 'back.lua'
+INFO - [♥] Applied 21 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/event.lua'
+INFO - [♥] Applied 2 patches to 'engine/node.lua'
+INFO - [♥] Applied 4 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 79 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'for i = 1, 2 do' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'create_shop_card_ui(card, \'Voucher\', G.shop_vouchers)' on target 'game.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or SMODS.get_next_vouchers()' on target 'game.lua' for pattern patch from Cryptid\lovely\very_fair.toml resulted in no matches
+WARN - [♥] Pattern 'Cryptid.profile_prefix = Jen and \"J\" or \"M\"' on target 'game.lua' for pattern patch from Entropy\lovely\core.toml resulted in no matches
+WARN - [♥] Pattern '{card_limit = self.GAME.starting_params.consumable_slots, type = \'joker\', highlight_limit = 1})' on target 'game.lua' for pattern patch from TooManyDecks\lovely\limit.toml resulted in no matches
+WARN - [♥] Pattern '{card_limit = self.GAME.starting_params.joker_slots, type = \'joker\', highlight_limit = 1})' on target 'game.lua' for pattern patch from TooManyDecks\lovely\limit.toml resulted in no matches
+WARN - [♥] Pattern 'self.GAME.current_round.voucher = G.SETTINGS.tutorial_progress and G.SETTINGS.tutorial_progress.forced_voucher or get_next_voucher_key()' on target 'game.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Regex 'card\\:start_materialize\\(\\)\\n\\s+G\\.shop_vouchers\\:emplace\\(card\\)\\n\\s+end' on target 'game.lua' for regex patch from Cryptid\lovely\Voucher.toml resulted in no matches
+INFO - [♥] Applied 132 patches to 'game.lua'
+INFO - [♥] Applied 3 patches to 'globals.lua'
+INFO - [♥] Applied 15 patches to 'engine/ui.lua'
+WARN - [♥] Pattern 'G.GAME.shop.joker_max*1.02*G.CARD_W,' on target 'functions/UI_definitions.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern 'local stake_sprite = get_stake_sprite(G.GAME.stake or 1, 0.4)\n    blind_text[#blind_text + 1] =' on target 'functions/UI_definitions.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\ui.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local card = Card(0,0, 0.5*G.CARD_W, 0.5*G.CARD_H, G.P_CARDS[v[1]], G.P_CENTERS[v[3] or \'c_base\'])\n' on target 'functions/UI_definitions.lua' for pattern patch from SealsOnJokers\lovely\others.toml resulted in no matches
+WARN - [♥] Pattern 'local card = Card(0,0, 0.5*G.CARD_W, 0.5*G.CARD_H, G.P_CARDS[v[1]], G.P_CENTERS.c_base)\n' on target 'functions/UI_definitions.lua' for pattern patch from SealsOnJokers\lovely\others.toml resulted in no matches
+INFO - [♥] Applied 156 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips * mult) * (e and e.antiscore and -1 or 1),' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\blind.toml resulted in no matches
+WARN - [♥] Pattern 'if reps[j] ~= 1 then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'local effects = {[1] = {playing_card = G.hand.cards[i]:get_end_of_round_effect()}}' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind.name == \'The Serpent\' and' on target 'functions/state_events.lua' for pattern patch from Astronomica\lovely\iserpent.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = get_next_voucher_key()' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind:get_type() == \'Boss\' then' on target 'functions/state_events.lua' for pattern patch from Finity\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.round_resets.ante == G.GAME.win_ante and G.GAME.blind:get_type() == \'Boss\' then' on target 'functions/state_events.lua' for pattern patch from Finity\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'elseif G.GAME.round_resets.blind == G.P_BLINDS.bl_big then' on target 'functions/state_events.lua' for pattern patch from Finity\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'if to_big(G.GAME.dollars) >= to_big(5) and not G.GAME.modifiers.no_interest then\n   add_round_eval_row({bonus = true, name=\'interest\', pitch = pitch, dollars = G.GAME.interest_amount*math.min(math.floor(G.GAME.dollars/5), G.GAME.interest_cap/5)})\n   pitch = pitch + 0.06\n   if (not G.GAME.seeded and not G.GAME.challenge) or SMODS.config.seeded_unlocks then\n       if G.GAME.interest_amount*math.min(math.floor(G.GAME.dollars/5), G.GAME.interest_cap/5) == G.GAME.interest_amount*G.GAME.interest_cap/5 then \n           G.PROFILES[G.SETTINGS.profile].career_stats.c_round_interest_cap_streak = G.PROFILES[G.SETTINGS.profile].career_stats.c_round_interest_cap_streak + 1\n       else\n           G.PROFILES[G.SETTINGS.profile].career_stats.c_round_interest_cap_streak = 0\n       end\n   end\n   check_for_unlock({type = \'interest_streak\'})\n   dollars = dollars + G.GAME.interest_amount*math.min(math.floor(G.GAME.dollars/5), G.GAME.interest_cap/5)\n' on target 'functions/state_events.lua' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'if SMODS.has_enhancement(scoring_hand[i], \'m_glass\') and not scoring_hand[i].debuff and pseudorandom(\'glass\') < G.GAME.probabilities.normal/(scoring_hand[i].ability.name == \'Glass Card\' and scoring_hand[i].ability.extra or G.P_CENTERS.m_glass.config.extra) then' on target 'functions/state_events.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)if destroyed then \\n' on target 'functions/state_events.lua' for regex patch from Cryptid\lovely\seal.toml resulted in no matches
+INFO - [♥] Applied 108 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = localize(\'$\')..config.dollars, scale = 1.2*scale, colour = G.C.WHITE, shadow = true, juice = true}}' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\code.toml resulted in no matches
+WARN - [♥] Pattern 'G.shop_jokers.T.w = G.GAME.shop.joker_max*1.01*G.CARD_W' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\equilibrium.toml resulted in no matches
+WARN - [♥] Pattern 'function generate_card_ui(_c, full_UI_table, specific_vars, card_type, badges, hide_desc, main_start, main_end)' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'elseif v.boss.showdown and (G.GAME.round_resets.ante)%G.GAME.win_ante == 0 and G.GAME.round_resets.ante >= 2 then' on target 'functions/common_events.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Regex 'localize\\(\'ph_mr_bones\'\\)..\' \'\\}, colours = \\{G.C.FILTER' on target 'functions/common_events.lua' for regex patch from Cryptid\lovely\code.toml resulted in no matches
+WARN - [♥] Pattern 'elseif v.boss.showdown and (G.GAME.round_resets.ante)%G.GAME.win_ante == 0 and G.GAME.round_resets.ante >= 2 then' on target 'functions/common_events.lua' for pattern patch from Astronomica\lovely\invertedblinds.toml resulted in no matches
+WARN - [♥] Pattern 'if not v.config.softlock then\n    softlocked = softlocked' on target 'functions/common_events.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\planets.toml resulted in no matches
+WARN - [♥] Pattern '                    if (not v.config.softlock or G.GAME.hands[v.config.hand_type].played > 0) then\n                        add = true\n                    end' on target 'functions/common_events.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\planets.toml resulted in no matches
+WARN - [♥] Pattern '                    if (not v.config.softlock or G.GAME.hands[v.config.hand_type].played > 0) then\n                        add = true\n                    end' on target 'functions/common_events.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\planets.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'elseif v.boss.showdown and (G.GAME.round_resets.ante)%G.GAME.win_ante == 0 and G.GAME.round_resets.ante >= 2 then\n' on target 'functions/common_events.lua' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.hands[hand].chips = math.max(G.GAME.hands[hand].s_chips + G.GAME.hands[hand].l_chips*(G.GAME.hands[hand].level - 1), 0)\n' on target 'functions/common_events.lua' for pattern patch from All-In-Jest\lovely\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.hands[hand].mult = math.max(G.GAME.hands[hand].s_mult + G.GAME.hands[hand].l_mult*(G.GAME.hands[hand].level - 1), 1)\n' on target 'functions/common_events.lua' for pattern patch from All-In-Jest\lovely\lovely.toml resulted in no matches
+INFO - [♥] Applied 219 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern '                c = G.shop_jokers:remove_card(G.shop_jokers.cards[i])\n                c:remove()\n                c = nil\n' on target 'functions/button_callbacks.lua' for pattern patch from Entropy\lovely\reverse_codes.toml resulted in no matches
+WARN - [♥] Pattern '    if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then ' on target 'functions/button_callbacks.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\selectionlimit.toml resulted in no matches
+WARN - [♥] Pattern 'if ((G.GAME.dollars-G.GAME.bankrupt_at) - 10 >= 0) and' on target 'functions/button_callbacks.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then' on target 'functions/button_callbacks.lua' for pattern patch from SealsOnJokers\lovely\others.toml resulted in no matches
+WARN - [♥] Pattern 'for i = 1, #G.GAME.tags do\n            if G.GAME.tags[i]:apply_to_run({type = \'new_blind_choice\'}) then break end\n          end' on target 'functions/button_callbacks.lua' for pattern patch from TooManyDecks\lovely\decks.toml resulted in no matches
+WARN - [♥] Pattern 'if #G.hand.highlighted <= 0 or G.GAME.blind.block_play or #G.hand.highlighted > 5 then' on target 'functions/button_callbacks.lua' for pattern patch from CardSleeves\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 84 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern '*then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from smods\lovely\calculate_card_added.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if not initial then G.GAME.blind:debuff_card(self) end' on target 'card.lua' for pattern patch from Cryptid\lovely\lib_misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Campfire\' and G.GAME.blind.boss and not (G.GAME.blind.config and G.GAME.blind.config.bonus) and self.ability.x_mult > 1 then' on target 'card.lua' for pattern patch from Cryptid\lovely\misc.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name:find(\'Arcana\') then' on target 'card.lua' for pattern patch from Cryptid\lovely\misprint.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'The Hermit\' or self.ability.consumeable.hand_type or self.ability.name == \'Temperance\' or self.ability.name == \'Black Hole\' then' on target 'card.lua' for pattern patch from Cryptid\lovely\stake.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.queue_negative_removal then' on target 'card.lua' for pattern patch from Cryptid\lovely\sticker.toml resulted in no matches
+WARN - [♥] Pattern '    return generate_card_ui(self.config.center, nil, loc_vars, card_type, badges, hide_desc, main_start, main_end)' on target 'card.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\localization.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.current_round.voucher = nil' on target 'card.lua' for pattern patch from Cryptid\lovely\Voucher.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '            local rightmost = G.hand.highlighted[1]\n            for i=1, #G.hand.highlighted do if G.hand.highlighted[i].T.x > rightmost.T.x then rightmost = G.hand.highlighted[i] end end\n            for i=1, #G.hand.highlighted do\n                G.E_MANAGER:add_event(Event({trigger = \'after\',delay = 0.1,func = function()\n                    if G.hand.highlighted[i] ~= rightmost then\n                        copy_card(rightmost, G.hand.highlighted[i])\n                    end\n                    return true end }))\n            end  \n' on target 'card.lua' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern '    elseif self.seal == \'Gold\' then\n        ret = ret +  3\n' on target 'card.lua' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Aura\' then \n            if G.hand and (#G.hand.highlighted == 1) and G.hand.highlighted[1] and (not G.hand.highlighted[1].edition) then return true end\n' on target 'card.lua' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'elseif self.ability.name == \'Business Card\' then loc_vars = {\'\'..(G.GAME and G.GAME.probabilities.normal or 1), self.ability.extra}' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Pattern 'pseudorandom(\'business\') < G.GAME.probabilities.normal/self.ability.extra then' on target 'card.lua' for pattern patch from Cryptid\lovely\Probability.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur\lovely.toml resulted in no matches
+WARN - [♥] Regex 'self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for regex patch from CardSleeves\lovely\expected_to_fail.toml resulted in no matches
+INFO - [♥] Applied 317 patches to 'card.lua'
+WARN - [♥] Pattern '    self.config.highlighted_limit = config.highlight_limit or 5' on target 'cardarea.lua' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\selectionlimit.toml resulted in no matches
+INFO - [♥] Applied 25 patches to 'cardarea.lua'
+INFO - [♥] Applied 47 patches to 'blind.lua'
+WARN - [♥] Pattern 'self.children.card:set_ability(G.P_CENTERS.j_jolly)' on target 'card_character.lua' for pattern patch from Entropy\lovely\core.toml resulted in no matches
+INFO - [♥] Applied 3 patches to 'card_character.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 15 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 8 patches to '=[SMODS _ "src/overrides.lua"]'
+WARN - [♥] Pattern '            local _suit, _rank =\n                            pseudorandom_element(SMODS.Suits, pseudoseed(\'familiar_create\')).card_key,\n                            pseudorandom_element(faces, pseudoseed(\'familiar_create\')).card_key\n                        local cen_pool = {}\n                        for k, v in pairs(G.P_CENTER_POOLS[\"Enhanced\"]) do\n                            if v.key ~= \'m_stone\' and not v.overrides_base_rank then\n                                cen_pool[#cen_pool + 1] = v\n                            end\n                        end\n                        cards[i] = create_playing_card({\n                            front = G.P_CARDS[_suit .. \'_\' .. _rank],\n                            center = pseudorandom_element(cen_pool, pseudoseed(\'spe_card\'))\n                        }, G.hand, nil, i ~= 1, { G.C.SECONDARY_SET.Spectral })\n' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern ' local _suit, _rank =\n                            pseudorandom_element(SMODS.Suits, pseudoseed(\'grim_create\')).card_key, \'A\'\n                        local cen_pool = {}\n                        for k, v in pairs(G.P_CENTER_POOLS[\"Enhanced\"]) do\n                            if v.key ~= \'m_stone\' and not v.overrides_base_rank then\n                                cen_pool[#cen_pool + 1] = v\n                            end\n                        end\n                        cards[i] = create_playing_card({\n                            front = G.P_CARDS[_suit .. \'_\' .. _rank],\n                            center = pseudorandom_element(cen_pool, pseudoseed(\'spe_card\'))\n                        }, G.hand, nil, i ~= 1, { G.C.SECONDARY_SET.Spectral })\n' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'local _suit, _rank =\n                            pseudorandom_element(SMODS.Suits, pseudoseed(\'incantation_create\')).card_key,\n                            pseudorandom_element(numbers, pseudoseed(\'incantation_create\')).card_key\n                        local cen_pool = {}\n                        for k, v in pairs(G.P_CENTER_POOLS[\"Enhanced\"]) do\n                            if v.key ~= \'m_stone\' and not v.overrides_base_rank then\n                                cen_pool[#cen_pool + 1] = v\n                            end\n                        end\n                        cards[i] = create_playing_card({\n                            front = G.P_CARDS[_suit .. \'_\' .. _rank],\n                            center = pseudorandom_element(cen_pool, pseudoseed(\'spe_card\'))\n                        }, G.hand, nil, i ~= 1, { G.C.SECONDARY_SET.Spectral })\n' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+WARN - [♥] Pattern 'local _suit, _rank =\n                            pseudorandom_element(SMODS.Suits, pseudoseed(\'incantation_create\')).card_key,\n                            pseudorandom_element(numbers, pseudoseed(\'incantation_create\')).card_key\n                        local cen_pool = {}\n                        for k, v in pairs(G.P_CENTER_POOLS[\"Enhanced\"]) do\n                            if v.key ~= \'m_stone\' and not v.overrides_base_rank then\n                                cen_pool[#cen_pool + 1] = v\n                            end\n                        end\n                        cards[i] = create_playing_card({\n                            front = G.P_CARDS[_suit .. \'_\' .. _rank],\n                            center = pseudorandom_element(cen_pool, pseudoseed(\'spe_card\'))\n                        }, G.hand, nil, i ~= 1, { G.C.SECONDARY_SET.Spectral })\n' on target '=[SMODS _ "src/game_object.lua"]' for pattern patch from Yggdrasil\lovely\skills.toml resulted in no matches
+INFO - [♥] Applied 9 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-05-11 08:59:33 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [G] 2025-05-11 08:59:33 :: INFO  :: SMODS :: Steamodded v1.0.0~BETA-0507a
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/card_draw.lua"]'
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Processing Mod file (Legacy header): Astronomica.lua
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Saving Mod Info: Astronomica
+INFO - [G] 2025-05-11 08:59:35 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/Balatro-Aikoyoris-Shenanigans/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-11 08:59:35 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/Balatro-Aikoyoris-Shenanigans/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-11 08:59:35 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus/dev/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded.lua
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Loader :: Duplicate Mod ID: Handy
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: Loader :: Valid JSON file found
+INFO - [♥] Applied 7 patches to '=[SMODS galdur "galdur.lua"]'
+INFO - [♥] Applied 2 patches to '=[SMODS CardSleeves "CardSleeves.lua"]'
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: CardSleeves :: CardSleeves v1.7.6 loaded~!
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sound :: Object garb_surge has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sound :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:35 :: TRACE :: Loader :: Mod kino was unable to load: 
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hello World! Starting TOGAPack...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking G.FUNCS.can_play...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking play_sound...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking Card:is_face...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking Card:get_id...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking Card:is_suit...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking G.FUNCS.draw_from_deck_to_hand...
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Hooking Blind:defeat...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/joker.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Jokers...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/deck.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Decks...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/voucher.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Vouchers...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/enhancement.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Enhancements...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/consumables.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Consumeables...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/seal.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Seals...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/booster.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Booster Packs...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/tag.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Tags...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/deckskin.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Deckskins...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/blind.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Blinds...
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: TOGAPack :: Executing items/crossmod.lua
+INFO - [G] 2025-05-11 08:59:35 :: INFO  :: TOGAPack :: Loading Cross-Mod content...
+INFO - [G] [CRYPTID] Loading library file ascended.lua
+INFO - [G] [CRYPTID] Loading library file calculate.lua
+INFO - [G] [CRYPTID] Loading library file content.lua
+WARN - [♥] Pattern 'bogus patch lol aikoyori was here no patching ' on target '=[SMODS Cryptid "lib/content.lua"]' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\compat.cryptid.toml resulted in no matches
+INFO - [♥] Applied 0 patches to '=[SMODS Cryptid "lib/content.lua"]'
+INFO - [G] [CRYPTID] Loading library file cross-mod.lua
+INFO - [G] [CRYPTID] Loading library file d20.lua
+INFO - [G] [CRYPTID] Loading library file event.lua
+INFO - [G] [CRYPTID] Loading library file forcetrigger.lua
+INFO - [G] [CRYPTID] Loading library file gameset.lua
+INFO - [G] [CRYPTID] Loading library file https.lua
+INFO - [G] 2025-05-11 08:59:35 :: DEBUG :: SMODS.https :: Using https module backend
+INFO - [G] [CRYPTID] Loading library file misc.lua
+INFO - [G] [CRYPTID] Loading library file misprintize.lua
+INFO - [G] [CRYPTID] Loading library file modifiers.lua
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sticker :: Detected duplicate register call on object perishable
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sticker :: Detected duplicate register call on object pinned
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sticker :: Detected duplicate register call on object eternal
+INFO - [G] 2025-05-11 08:59:35 :: WARN  :: Sticker :: Detected duplicate register call on object rental
+INFO - [G] [CRYPTID] Loading library file notifications.lua
+INFO - [G] [CRYPTID] Loading library file overrides.lua
+INFO - [G] [CRYPTID] Loading library file pointerlib.lua
+INFO - [G] [CRYPTID] Loading library file ui.lua
+INFO - [G] [CRYPTID] Loading file achievement.lua
+INFO - [G] [CRYPTID] Loading file blind.lua
+INFO - [G] [CRYPTID] Loading file challenge.lua
+INFO - [G] [CRYPTID] Loading file code.lua
+INFO - [♥] Applied 1 patch to '=[SMODS Cryptid "items/code.lua"]'
+INFO - [G] [CRYPTID] Loading file deck.lua
+INFO - [G] [CRYPTID] Loading file enhanced.lua
+INFO - [G] [CRYPTID] Loading file epic.lua
+INFO - [G] [CRYPTID] Loading file exotic.lua
+INFO - [G] [CRYPTID] Loading file joker_display.lua
+INFO - [G] [CRYPTID] Loading file m.lua
+INFO - [G] [CRYPTID] Loading file misc.lua
+INFO - [G] [CRYPTID] Loading file misc_joker.lua
+INFO - [G] [CRYPTID] Loading file planet.lua
+INFO - [G] [CRYPTID] Loading file pointer.lua
+INFO - [G] [CRYPTID] Inserting Pointer Aliases
+INFO - [G] [CRYPTID] Loading file sleeve.lua
+INFO - [G] [CRYPTID] Loading file spectral.lua
+INFO - [G] [CRYPTID] Loading file spooky.lua
+INFO - [G] [CRYPTID] Loading file stake.lua
+INFO - [♥] Applied 1 patch to '=[SMODS Cryptid "items/stake.lua"]'
+INFO - [G] [CRYPTID] Loading file tag.lua
+INFO - [G] [CRYPTID] Loading file test.lua
+INFO - [G] [CRYPTID] Loading file voucher.lua
+INFO - [G] [CRYPTID] Loading Cryptid.lua from sdm0sstuff
+INFO - [G] [CRYPTID] Loading Cryptid.lua from Astronomica
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Object cry_effarcire has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Object sdm_vouchers has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Object sdm_bakery_consumables has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Object sdm_bakery_vouchers has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Draw Step :: Detected duplicate register call on object floating_sprite
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Draw Step :: Detected duplicate register call on object front
+INFO - [G] 2025-05-11 08:59:36 :: INFO  :: Aikoyori's Shenanigans :: Cryptid Detected... vro ;P
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Detected duplicate register call on object entr_modicon
+WARN - [♥] Pattern 'aikoyori was here' on target '=[SMODS entr "items/misc/seals.lua"]' for pattern patch from Balatro-Aikoyoris-Shenanigans\lovely\compat.entr.toml resulted in no matches
+INFO - [♥] Applied 0 patches to '=[SMODS entr "items/misc/seals.lua"]'
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: Object entr_ascendant_tags has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: Sticker :: Detected duplicate register call on object cry_rigged
+INFO - [G] 2025-05-11 08:59:36 :: TRACE :: Loader :: Mod SKHDecks was unable to load: 
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: CBlind :: Object c_entr_bl_eye has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: CBlind :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: CBlind :: Object c_entr_bl_wheel has the same key as an existing object, not registering.
+INFO - [G] 2025-05-11 08:59:36 :: WARN  :: CBlind :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-05-11 08:59:36 :: INFO  :: TIMER :: [0000] Injected Language in 0.001 ms
+INFO - [G] 2025-05-11 08:59:36 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 1.522 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0191] Injected Atlas in 4137.000 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0126] Injected Sound in 54.627 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0034] Injected Stake in 0.977 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0015] Injected Rarity in 0.118 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0023] Injected ObjectType in 0.452 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [1381] Injected Center in 11.683 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0011] Injected Undiscovered Sprite in 0.027 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0083] Injected Blind in 0.204 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0021] Injected Seal in 0.468 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0010] Injected Suit in 0.250 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0028] Injected Rank in 0.395 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0042] Injected DeckSkin in 0.372 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0055] Injected PokerHand in 0.386 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0038] Injected Challenge in 0.090 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0088] Injected Tag in 0.278 ms
+INFO - [G] 2025-05-11 08:59:40 :: INFO  :: TIMER :: [0018] Injected Sticker in 0.277 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0022] Injected Shader in 292.824 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0005] Injected Keybind in 0.027 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0029] Injected Achievement in 0.195 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0013] Injected nil in 0.047 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0038] Injected Draw Step in 0.111 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 39.782 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0010] Injected Other in 0.035 ms
+INFO - [G] 2025-05-11 08:59:41 :: INFO  :: TIMER :: [0002] Injected nil in 7.729 ms
+INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'ygg_sp_area' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before load
+INFO - [♥] Applied 1 patch to '=[SMODS _ "smods-https-thread.lua"]'
+INFO - [G] 2025-05-11 08:59:48 :: DEBUG :: SMODS.https(1) :: Using https module backend
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-05-11 08:59:50 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS TOGAPack "items/voucher.lua"]:100: attempt to index local 'card' (a nil value)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:612'
+	Local variables:
+	 msg = string: "[SMODS TOGAPack \"items/voucher.lua\"]:100: attempt to index local 'card' (a nil value)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE metamethod at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 598 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 598 of chunk main.lua)
+(3) Lua method 'redeem' at file 'items/voucher.lua:100' (from mod with id TOGAPack)
+	Local variables:
+	 self = table: 0x1b9eedc0  {alerted:true, loc_vars:function: 0x1b9eef08, _saved_d_u:true, original_key:wormsninjarope, mod:table: 0x1b6a6720, unlocked:true, _u:true, rarity:3 (more...)}
+	 card = nil
+	 card = nil
+	 (*temporary) = table: 0x1ef65870  {temp_limit:8, card_limit:8, highlighted_limit:5, type:hand, sort:suit desc, card_count:0, lr_padding:0.1}
+	 (*temporary) = number: 5
+	 (*temporary) = Lua function '?' (defined at line 6170 of chunk main.lua)
+	 (*temporary) = number: 1
+	 (*temporary) = Lua function '?' (defined at line 5945 of chunk main.lua)
+	 (*temporary) = nil
+	 (*temporary) = string: "attempt to index local 'card' (a nil value)"
+(4) Lua method 'apply_to_run' at file 'card.lua:2521'
+	Local variables:
+	 self = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+	 center = nil
+	 isblueprint = nil
+	 center_table = table: 0x1d012b98  {name:v_toga_wormsninjarope, extra:table: 0x1ef6ba00}
+	 obj = table: 0x1b9eedc0  {alerted:true, loc_vars:function: 0x1b9eef08, _saved_d_u:true, original_key:wormsninjarope, mod:table: 0x1b6a6720, unlocked:true, _u:true, rarity:3 (more...)}
+(5) Lua upvalue 'cr' at file 'card.lua:2470'
+	Local variables:
+	 self = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+	 top_dynatext = nil
+	 bot_dynatext = nil
+(6) Lua method 'redeem' at file 'items/deck.lua:270' (from mod with id Cryptid)
+	Local variables:
+	 self = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+(7) Lua upvalue 'useCardHook' at file 'functions/button_callbacks.lua:2317'
+	Local variables:
+	 e = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+	 mute = nil
+	 nosave = nil
+	 card = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+	 area = table: 0x1fec5218  {click_offset:table: 0x1fec55c0, static_rotation:false, shuffle_amt:0, parent:table: 0x1eac5728, T:table: 0x1fec5408, offset:table: 0x1eaa2900 (more...)}
+	 prev_state = number: 5
+	 dont_dissolve = nil
+	 delay_fac = number: 1
+	 nc = nil
+	 select_to = boolean: false
+	 cry_muse = boolean: false
+(8) Lua upvalue 'ref' at file './modules/hooks/ui.lua:506' (from mod with id aikoyorisshenanigans)
+	Local variables:
+	 e = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+	 m = nil
+	 ns = nil
+	 card = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+	 area = table: 0x1fec5218  {click_offset:table: 0x1fec55c0, static_rotation:false, shuffle_amt:0, parent:table: 0x1eac5728, T:table: 0x1fec5408, offset:table: 0x1eaa2900 (more...)}
+	 prev_state = number: 5
+	 dont_dissolve = nil
+	 delay_fac = number: 1
+(9) Lua upvalue 'use_cardref' at file 'lib/hooks.lua:1421' (from mod with id entr)
+	Local variables:
+	 e = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+	 mute = nil
+	 nosave = nil
+	 card = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+(10) Lua upvalue 'use_cardref' at file 'lib/hooks.lua:1474' (from mod with id entr)
+	Local variables:
+	 e = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+	 mute = nil
+	 nosave = nil
+	 card = table: 0x20217220  {sprite_facing:front, static_rotation:false, ambient_tilt:0.2, T:table: 0x20217400, bypass_discovery_center:true, extra_cost:0, highlighted:false (more...)}
+(11) Lua function '?' at file 'lib/hooks.lua:1860' (from mod with id entr) (best guess)
+	Local variables:
+	 e = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+	 mute = nil
+	 nosave = nil
+(12) Lua method 'click' at file 'engine/ui.lua:1026'
+	Local variables:
+	 self = table: 0x1ecaf7c0  {pixellated_rect:table: 0x1ddb0ea0, click_offset:table: 0x1ecb1258, static_rotation:true, parent:table: 0x1ecae1c0, T:table: 0x1ecb1168, offset:table: 0x1ecb1f58 (more...)}
+(13) Lua method 'update' at file 'engine/controller.lua:376'
+	Local variables:
+	 self = table: 0x1b39e100  {held_button_times:table: 0x1b69cf58, focus_cursor_stack_level:1, snap_cursor_to:table: 0x1fc48058, interrupt:table: 0x1b69cfa8, GAMEPAD:table: 0x1b424d90 (more...)}
+	 dt = number: 0.00759984
+(14) Lua upvalue 'gameUpdateRef' at file 'game.lua:2938'
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(15) Lua upvalue 'upd' at Steamodded file 'src/ui.lua:84' 
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(16) Lua upvalue 'hookTo' at file 'main.lua:6348'
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(17) Lua upvalue 'gu' at file 'code/level.lua:86' (from mod with id YGGDRASIL)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(18) Lua upvalue 'upd' at file 'lib/gameset.lua:27' (from mod with id Cryptid)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(19) Lua upvalue 'update_ref' at file 'lib/overrides.lua:299' (from mod with id Cryptid)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(20) Lua upvalue 'update_ref' at file 'lib/hooks.lua:1071' (from mod with id entr)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(21) Lua upvalue 'upd' at file 'lib/hooks.lua:1719' (from mod with id entr)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(22) Lua method 'update' at file 'lib/hooks.lua:1907' (from mod with id entr)
+	Local variables:
+	 self = table: 0x1b2a5b10  {F_GUIDE:false, F_CRASH_REPORTS:false, ygg_sp_area:table: 0x1f4296b8, F_QUIT_BUTTON:true, HUD_tags:table: 0x1f636f48, F_ENGLISH_ONLY:false, viewed_stake:1 (more...)}
+	 dt = number: 0.00759984
+(23) Lua upvalue 'love_update_ref' at file 'main.lua:1109'
+	Local variables:
+	 dt = number: 0.00759984
+(24) Lua upvalue 'oldupd' at file 'main.lua:4332'
+	Local variables:
+	 dt = number: 0.00759984
+(25) Lua field 'update' at file 'main.lua:6381'
+	Local variables:
+	 dt = number: 0.00759984
+(26) Lua function '?' at file 'main.lua:938' (best guess)
+(27) global C function 'xpcall'
+(28) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 909 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-05-11 08:59:50 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-0507a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.7.1
+Platform: Windows
+Steamodded Mods:
+    1: Entropy by Ruby [ID: entr, Priority: 666, Version: 1.0.0~alpha, Uses Lovely]
+    2: SDM_0's Stuff by SDM_0 [ID: sdm0sstuff, Version: 1.7.0d, Uses Lovely]
+    3: Card Sleeves by Larswijn [ID: CardSleeves, Priority: -10, Version: 1.7.6, Uses Lovely]
+    4: TOGA's Stuff by TheOneGoofAli [ID: TOGAPack, Priority: 2, Version: 1.4.0a, Uses Lovely]
+    5: Astronomica by naoriley [ID: Astronomica, Uses Lovely]
+    6: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2, Uses Lovely]
+    7: Banner by SylviBlossom [ID: banner, Version: 1.1.1, Uses Lovely]
+    8: All in Jest by Nevernamed, survivalaiden, RattlingSnow353 [ID: allinjest, Priority: 9999, Version: 0.3.3]
+    9: Handy by SleepyG11 [ID: Handy, Version: 1.4.2a, Uses Lovely]
+    10: Finity by Freh_, missingnumber [ID: finity, Priority: 1.1, Version: 1.0.3, Uses Lovely]
+    11: Garbshit by garb [ID: GARBPACK, Version: 2.0.1, Uses Lovely]
+    12: Yggdrasil by BepisFever [ID: YGGDRASIL, Priority: 1, Version: 1.0.0, Uses Lovely]
+    13: Too Many Decks by Squidguset, WaffleDevs [ID: SGTMD, Priority: 115, Version: 3.5.0, Uses Lovely]
+    14: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg-223 [ID: Talisman, Version: 2.2.0b, Uses Lovely]
+        Break Infinity: omeganum
+    15: Seals On Everything by Somethingcom515 [ID: SealsOnEverything, Priority: 1234, Version: 2.0.0, Uses Lovely]
+    16: DebugPlus by WilsontheWolf [ID: DebugPlus, Version: 1.5.0~dev, Uses Lovely]
+    17: Cryptid by MathIsFun_, Cryptid and Balatro Discords [ID: Cryptid, Priority: 114, Version: 0.5.6dev, Uses Lovely]
+    18: Aikoyori's Shenanigans by Aikoyori [ID: aikoyorisshenanigans, Priority: 300, Version: 0.2.0-alpha-250510c, Uses Lovely]
+Lovely Mods:

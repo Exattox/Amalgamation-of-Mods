@@ -1,0 +1,1547 @@
+INFO - [♥] Lovely 0.7.1
+INFO - [♥] Game directory is at "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Balatro"
+INFO - [♥] Writing logs to "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\log"
+INFO - [♥] Using mod directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods"
+INFO - [♥] Found .lovelyignore in 'balatro-highest-priestess-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'DebugPlus-master', skipping it.
+INFO - [♥] Found .lovelyignore in 'JoyousSpring-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'Kino-main', skipping it.
+INFO - [♥] Found .lovelyignore in 'my_balatro_mods-main', skipping it.
+WARN - [♥] Unknown key `patches.2.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\CelesteCardCollection-main\\lovely\\card_credits.toml", ignoring it
+WARN - [♥] Unknown key `patches.9.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Magic-the-Jokering-main\\lovely\\override.toml", ignoring it
+WARN - [♥] Unknown key `patches.49.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+WARN - [♥] Unknown key `patches.52.?.match_indent` found in patch file at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\Talisman\\lovely.toml", ignoring it
+INFO - [♥] Cleaning up dumps directory at "C:\\Users\\erikk\\AppData\\Roaming\\Balatro\\Mods\\lovely\\dump"
+INFO - [♥] Initialization complete in 1463ms
+WARN - [♥] Pattern 'G.ARGS.score_intensity.organ = G.video_organ or G.ARGS.score_intensity.required_score > 0 and math.max(math.min(0.4, 0.1*math.log(G.ARGS.score_intensity.earned_score/(G.ARGS.score_intensity.required_score+1), 5)),0.) or 0' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if type(G.GAME.current_round.current_hand.chips) ~= \'number\' or type(G.GAME.current_round.current_hand.mult) ~= \'number\' then' on target 'main.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 16 patches to 'main.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [♥] Applied 7 patches to 'engine/controller.lua'
+INFO - [♥] Applied 17 patches to 'back.lua'
+INFO - [♥] Applied 8 patches to 'tag.lua'
+INFO - [♥] Applied 1 patch to 'engine/node.lua'
+INFO - [♥] Applied 2 patches to 'engine/moveable.lua'
+INFO - [♥] Applied 3 patches to 'engine/sprite.lua'
+INFO - [♥] Applied 2 patches to 'engine/animatedsprite.lua'
+WARN - [♥] Pattern 'assembled_string = assembled_string..(type(subpart) == \'string\' and subpart or args.vars[tonumber(subpart[1])] or \'ERROR\')' on target 'functions/misc_functions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+INFO - [♥] Applied 53 patches to 'functions/misc_functions.lua'
+WARN - [♥] Pattern 'local card = Card(G.shop_vouchers.T.x + G.shop_vouchers.T.w/2,\nG.shop_vouchers.T.y, G.CARD_W, G.CARD_H, G.P_CARDS.empty, G.P_CENTERS[G.GAME.current_round.voucher],{bypass_discovery_center = true, bypass_discovery_ui = true})\n' on target 'game.lua' for pattern patch from Maximus-main\lovely\horoscope.toml resulted in no matches
+WARN - [♥] Pattern 'G.SPLASH_BACK:define_draw_steps({{\n    shader = \'splash\',\n    send = {\n        {name = \'time\', ref_table = G.TIMERS, ref_value = \'REAL\'},\n        {name = \'vort_speed\', val = 1},\n        {name = \'colour_1\', ref_table = G.C, ref_value = \'COLOUR1\'},\n        {name = \'colour_2\', ref_table = G.C, ref_value = \'WHITE\'},\n        {name = \'mid_flash\', val = 0},\n        {name = \'vort_offset\', val = (2*90.15315131*os.time())%100000},\n    }}})\n' on target 'game.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 61 patches to 'game.lua'
+INFO - [♥] Applied 5 patches to 'globals.lua'
+INFO - [♥] Applied 6 patches to 'engine/ui.lua'
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].chips, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}},' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.T, config={text = G.GAME.hands[handname].mult, scale = 0.45, colour = G.C.UI.TEXT_LIGHT}}' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.C, config={align = \"cm\", padding = 0.01, r = 0.1, colour = G.C.HAND_LEVELS[math.min(7, G.GAME.hands[handname].level)], minw = 1.5, outline = 0.8, outline_colour = G.C.WHITE}, nodes={' on target 'functions/UI_definitions.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)return \\{n=G\\.UIT\\.ROOT, config = \\{align = \'cm\', colour = G\\.C\\.CLEAR\\}, nodes=\\{\\n[\\s\\S]{8}\\{n=G\\.UIT\\.C, config=\\{align = \"cm\"' on target 'functions/UI_definitions.lua' for regex patch from D6-Jokers-main\lovely\main.toml resulted in no matches
+WARN - [♥] Regex '(?<indent>[\\t ]*)\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", minw = 1\\.5, minh = 0\\.4, r = 0\\.1, padding = 0\\.05, colour = G\\.C\\.WHITE\\}, nodes=\\{\\{n=G\\.UIT\\.R, config=\\{align = \"cm\", padding = 0\\.03\\}, nodes=t\\}\\}\\}' on target 'functions/UI_definitions.lua' for regex patch from D6-Jokers-main\lovely\main.toml resulted in no matches
+WARN - [♥] Pattern 'if polled_rate > check_rate and polled_rate <= check_rate + v.val then\n    local card = create_card(v.type, area, nil, nil, nil, nil, nil, \'sho\')\n' on target 'functions/UI_definitions.lua' for pattern patch from Maximus-main\lovely\coupon.toml resulted in no matches
+WARN - [♥] Pattern 'if polled_rate > check_rate and polled_rate <= check_rate + v.val then\n    local card = create_card(v.type, area, nil, nil, nil, nil, nil, \'sho\')\n' on target 'functions/UI_definitions.lua' for pattern patch from Maximus-main\lovely\modifiers.toml resulted in no matches
+WARN - [♥] Pattern 'table.insert(t, create_toggle({label = localize(\'b_high_contrast_cards\'), ref_table = G.SETTINGS, ref_value = \'colourblind_option\', callback = G.FUNCS.refresh_contrast_mode}))' on target 'functions/UI_definitions.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 104 patches to 'functions/UI_definitions.lua'
+WARN - [♥] Pattern 'if effects[ii].card then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects.jokers.Xmult_mod then mult = mod_mult(mult*effects.jokers.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effect.Xmult_mod then mult = mod_mult(mult*effect.Xmult_mod);extras.mult = true  end' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].message then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern '--calculate the card edition effects' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if effects[ii].edition.p_dollars_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if edition_effects.jokers.x_mult_mod then' on target 'functions/state_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Regex 'game_over = false\n(?<indent>[\\t ]*)end\n[\\t ]*for i = 1, #G.jokers.cards do' on target 'functions/state_events.lua' for regex patch from Magic-the-Jokering-main\lovely\override.toml resulted in no matches
+WARN - [♥] Pattern 'ease_to = G.GAME.chips + math.floor(hand_chips*mult),\n' on target 'functions/state_events.lua' for pattern patch from Maximus-main\lovely\modifiers.toml resulted in no matches
+WARN - [♥] Pattern '    for k, v in ipairs(G.play.cards) do\n        if (not v.shattered) and (not v.destroyed) then\n            draw_card(G.play,G.discard, it*100/play_count,\'down\', false, v)\n            it = it + 1\n        end\n    end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern '                if effects.jokers.level_up then\n                    level_up_hand(card, text)\n                end\n' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'card_eval_status_text(card, \'jokers\', nil, percent, nil, effects.jokers)' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if next(find_joker(\'Splash\')) then' on target 'functions/state_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 80 patches to 'functions/state_events.lua'
+WARN - [♥] Pattern 'colours = {(G.GAME.hands[_c.config.hand_type].level==1 and G.C.UI.TEXT_DARK or G.C.HAND_LEVELS[math.min(7, G.GAME.hands[_c.config.hand_type].level)])}' on target 'functions/common_events.lua' for pattern patch from balatro-victins-collection-0.0.0-alpha.0.0\lovely\hand_level_colours.toml resulted in no matches
+WARN - [♥] Pattern '        if specific_vars.bonus_chips then\n            localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {specific_vars.bonus_chips}}\n        end\n' on target 'functions/common_events.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern '        if _c.name ~= \'Stone Card\' and ((specific_vars and specific_vars.bonus_chips) or (cfg.bonus ~= 0 and cfg.bonus)) then\n            localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {((specific_vars and specific_vars.bonus_chips) or cfg.bonus)}}\n        end\n' on target 'functions/common_events.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.hand_text_area.hand_level.config.colour = G.C.HAND_LEVELS[math.min(vals.level, 7)]' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if num_dollars > 60 then' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'func = (function() if eval_func(card) then if not first or first then card:juice_up(0.1, 0.1) end;juice_card_until(card, eval_func, nil, 0.8) end return true end)' on target 'functions/common_events.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'elseif card.jimbo then' on target 'functions/common_events.lua' for pattern patch from balatro-victins-collection-0.0.0-alpha.0.0\lovely\zodiac.toml resulted in no matches
+WARN - [♥] Pattern '{n=G.UIT.O, config={object = DynaText({string = {\' \'..localize(\'ph_mr_bones\')..\' \'}, colours = {G.C.FILTER}, shadow = true, pop_in = 0, scale = 0.5*scale, silent = true})}}' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({ --Add bonus chips from this card\n                    trigger = \'before\',\n                    delay = delay,\n                    func = function()\n                    if extrafunc then extrafunc() end\n                    attention_text({\n                        text = text,\n                        scale = config.scale or 1,\n                        hold = delay - 0.2,\n                        backdrop_colour = colour,\n                        align = card_aligned,\n                        major = card,\n                        offset = {x = 0, y = y_off}\n                    })\n                    play_sound(sound, 0.8+percent*0.2, volume)\n                    if not extra or not extra.no_juice then\n                        card:juice_up(0.6, 0.1)\n                        G.ROOM.jiggle = G.ROOM.jiggle + 0.7\n                    end\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if specific_vars.nominal_chips then\n    localize{type = \'other\', key = \'card_chips\', nodes = desc_nodes, vars = {specific_vars.nominal_chips}}\nend\nif specific_vars.bonus_chips then\n    localize{type = \'other\', key = \'card_extra_chips\', nodes = desc_nodes, vars = {specific_vars.bonus_chips}}\nend\n' on target 'functions/common_events.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 163 patches to 'functions/common_events.lua'
+WARN - [♥] Pattern 'if not G.from_boss_tag then ease_dollars(-10) end
+WARN - [♥] ' on target 'functions/button_callbacks.lua' for pattern patch from JokerHub-main\lovely.toml resulted in 2 matches, wanted 1
+WARN - [♥] Ignoring excess matches
+WARN - [♥] Pattern 'if ((G.GAME.dollars-G.GAME.bankrupt_at) - 10 >= 0) and' on target 'functions/button_callbacks.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.ARGS.score_intensity.earned_score >= G.ARGS.score_intensity.required_score and G.ARGS.score_intensity.required_score > 0 then' on target 'functions/button_callbacks.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+INFO - [♥] Applied 63 patches to 'functions/button_callbacks.lua'
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from CelesteCardCollection-main\lovely\j_booster.toml resulted in no matches
+WARN - [♥] Pattern '        loc_vars = { playing_card = not not self.base.colour, value = self.base.value, suit = self.base.suit, colour = self.base.colour,\n                    nominal_chips = self.base.nominal > 0 and self.base.nominal or nil,\n                    bonus_chips = (self.ability.bonus + (self.ability.perma_bonus or 0)) > 0 and (self.ability.bonus + (self.ability.perma_bonus or 0)) or nil,\n' on target 'card.lua' for pattern patch from NeatoJokers-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'for k, v in pairs(G.playing_cards) do\n    if v.config.center == G.P_CENTERS.m_steel then self.ability.steel_tally = self.ability.steel_tally+1 end\nend\n' on target 'card.lua' for pattern patch from SharrisMod-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'context.other_card.ability.name == \'Gold Card\' then\n' on target 'card.lua' for pattern patch from SharrisMod-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.GAME.blind then G.E_MANAGER:add_event(Event({ func = function() G.GAME.blind:set_blind(nil, true, nil); return true end })) end' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'x_mult = center.config.Xmult or 1,' on target 'card.lua' for pattern patch from Talisman\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'bonus_chips = (self.ability.bonus + (self.ability.perma_bonus or 0)) > 0 and (self.ability.bonus + (self.ability.perma_bonus or 0)) or nil,\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\bonus_mult.toml resulted in no matches
+WARN - [♥] Pattern '--If the card has a front, draw that next\n    if self.children.front and (self.ability.delayed or (self.ability.effect ~= \'Stone Card\' and not self.config.center.replace_base_card)) then\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\hammer_and_chisel.toml resulted in no matches
+WARN - [♥] Pattern 'if self.area and self.ability.couponed and (self.area == G.shop_jokers or self.area == G.shop_booster) then self.cost = 0 end\nself.sell_cost_label = self.facing == \'back\' and \'?\' or self.sell_cost\n' on target 'card.lua' for pattern patch from Maximus-main\lovely\shop.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from Maximus-main\lovely\trick_or_treat.toml resulted in no matches
+WARN - [♥] Pattern 'G.GAME.pack_choices = self.config.center.config.choose or 1' on target 'card.lua' for pattern patch from Prism-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'local currentBack = self.params.viewed_back and G.GAME.viewed_back or G.GAME.selected_back' on target 'card.lua' for pattern patch from Galdur-master\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'G.E_MANAGER:add_event(Event({trigger = \'after\',delay = 0.1,func = function() G.hand.highlighted[i]:set_ability(G.P_CENTERS[self.ability.consumeable.mod_conv]);return true end }))' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.debuff then\n    self.children.center:draw_shader(\'debuff\', nil, self.ARGS.send_to_shader)\n' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if G.consumeables.cards[i].ability.consumeable then' on target 'card.lua' for pattern patch from Cardsauce\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'if self.ability.name == \'Black Hole\' then' on target 'card.lua' for pattern patch from GARBSHIT-main\lovely.toml resulted in no matches
+WARN - [♥] Pattern 'for i = 1, self.ability.extra.destroy do destroyed_cards[#destroyed_cards+1] = temp_hand[i] end' on target 'card.lua' for pattern patch from GARBSHIT-main\lovely.toml resulted in no matches
+INFO - [♥] Applied 295 patches to 'card.lua'
+INFO - [♥] Applied 13 patches to 'cardarea.lua'
+WARN - [♥] Pattern 'if self.name == \'The Mark\' and card:is_face(true) then' on target 'blind.lua' for pattern patch from CelesteCardCollection-main\lovely\bl_suitflip.toml resulted in no matches
+INFO - [♥] Applied 42 patches to 'blind.lua'
+INFO - [♥] Applied 5 patches to 'engine/text.lua'
+INFO - [♥] Applied 3 patches to 'challenges.lua'
+INFO - [♥] Applied 1 patch to '=[SMODS _ "src/ui.lua"]'
+INFO - [♥] Applied 3 patches to '=[SMODS _ "src/utils.lua"]'
+INFO - [♥] Applied 4 patches to '=[SMODS _ "src/game_object.lua"]'
+INFO - [G] Failed to connect to the debug server
+INFO - [G] 2025-03-07 15:29:57 :: DEBUG :: DebugConsole :: Steamodded Debug Socket started !
+INFO - [♥] Applied 9 patches to 'engine/sound_manager.lua'
+INFO - [♥] Applied 3 patches to 'engine/save_manager.lua'
+INFO - [♥] Applied 2 patches to 'engine/string_packer.lua'
+INFO - [G] 2025-03-07 15:29:59 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:29:59 :: TRACE :: Loader :: Processing Mod file (Legacy header): BadAppleJoker.lua
+INFO - [G] 2025-03-07 15:29:59 :: TRACE :: Loader :: Saving Mod Info: BadApple
+INFO - [G] 2025-03-07 15:29:59 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:00 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: Cardsauce
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: CelesteCardCollection
+INFO - [G] 2025-03-07 15:30:02 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/CelesteCardCollection-main/settings.json, ignoring: [lovely json "libs/json/json.lua"]:185: expected string for key at line 3 col 57
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): CodexArcanum.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: CodexArcanum
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus-master/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-07 15:30:02 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/DebugPlus-master/dev/.luarc.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): EvaJokers.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: EvaJokers
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: GARBPACK
+INFO - [G] 2025-03-07 15:30:02 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Processing Mod file (Legacy header): JestersPrivilege.lua
+INFO - [G] 2025-03-07 15:30:02 :: TRACE :: Loader :: Saving Mod Info: JestersPrivilege
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Saving Mod Info: sdm0sstuff
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/SnoresvilleTurbulentJokers/SnoresvilleTurbulentJokers.json, ignoring: [SMODS _ "src/loader.lua"]:105: attempt to call method 'gmatch' (a nil value)
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Processing Mod file (Legacy header): steamodded_metadata.lua
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Saving Mod Info: Talisman
+INFO - [G] 2025-03-07 15:30:03 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Saving Mod Info: THREEDEPOSIT
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:03 :: TRACE :: Loader :: Saving Mod Info: unsorted
+INFO - [G] 2025-03-07 15:30:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): DnDJ.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: dndj
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): main.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: JoinTheCrowd
+INFO - [G] 2025-03-07 15:30:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:04 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): 5_legendary_challenges.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: legendaryChallenges
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Abilities.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetmmaAbilities
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Jokers.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetmmaJokers
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Spells.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetmmaSpells
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Voucher_Pack.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetmmaVoucherPack
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): Betmma_Vouchers.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetmmaVouchers
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Processing Mod file (Legacy header): better_vouchers_this_run_ui.lua
+INFO - [G] 2025-03-07 15:30:04 :: TRACE :: Loader :: Saving Mod Info: BetterVouchersThisRunUI
+INFO - [G] 2025-03-07 15:30:04 :: ERROR :: Loader :: Found invalid metadata JSON file at C:\Users\erikk\AppData\Roaming\Balatro\Mods/paperback-main/.vscode/settings.json, ignoring: [SMODS _ "src/loader.lua"]:226: id
+INFO - [G] 2025-03-07 15:30:05 :: INFO  :: DefaultLogger :: Valid JSON file found
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Ignis with the slug c_alchemy_ignis have been registered at the id 2.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Aqua with the slug c_alchemy_aqua have been registered at the id 3.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Terra with the slug c_alchemy_terra have been registered at the id 4.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Aero with the slug c_alchemy_aero have been registered at the id 5.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Quicksilver with the slug c_alchemy_quicksilver have been registered at the id 6.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Salt with the slug c_alchemy_salt have been registered at the id 7.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Sulfur with the slug c_alchemy_sulfur have been registered at the id 8.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Phosphorus with the slug c_alchemy_phosphorus have been registered at the id 9.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Bismuth with the slug c_alchemy_bismuth have been registered at the id 10.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Cobalt with the slug c_alchemy_cobalt have been registered at the id 11.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Arsenic with the slug c_alchemy_arsenic have been registered at the id 12.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Antimony with the slug c_alchemy_antimony have been registered at the id 13.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Soap with the slug c_alchemy_soap have been registered at the id 14.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Manganese with the slug c_alchemy_manganese have been registered at the id 15.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Wax with the slug c_alchemy_wax have been registered at the id 16.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Borax with the slug c_alchemy_borax have been registered at the id 17.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Glass with the slug c_alchemy_glass have been registered at the id 18.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Magnet with the slug c_alchemy_magnet have been registered at the id 19.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Gold with the slug c_alchemy_gold have been registered at the id 20.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Silver with the slug c_alchemy_silver have been registered at the id 21.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Oil with the slug c_alchemy_oil have been registered at the id 22.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Acid with the slug c_alchemy_acid have been registered at the id 23.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Brimstone with the slug c_alchemy_brimstone have been registered at the id 24.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Alchemical named Uranium with the slug c_alchemy_uranium have been registered at the id 25.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_1 have been registered at the id 34.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_2 have been registered at the id 35.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_3
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_3 have been registered at the id 36.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_normal_4
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Alchemy Pack with the slug p_alchemy_normal_4 have been registered at the id 37.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Jumbo Alchemy Pack with the slug p_alchemy_jumbo_1 have been registered at the id 38.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_jumbo_2
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Jumbo Alchemy Pack with the slug p_alchemy_jumbo_2 have been registered at the id 39.
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_undiscovered
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: c_alchemy_locked
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: alchemical_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: ca_booster_atlas
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: p_alchemy_mega_1
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: The Booster named Mega Alchemy Pack with the slug p_alchemy_mega_1 have been registered at the id 40.
+INFO - [G] betmma config not found
+INFO - [G] 2025-03-07 15:30:06 :: DEBUG :: DefaultLogger :: Loaded BadAppleJoker~
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: pairs() and ipairs() patched. Reason: Convenience
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Blind:modify_hand(), update_hand_text(), and Back:trigger_effect() patched. Reason: Scoring tags
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Object:__call() and Tag:load() patched. Reason: Rendering Poly Tag
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Blind:defeat() and G.FUNCS.load_profile() patched. Reason: Unlock conditions
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: ease_dollars() patched. Reason: Credit Deck, Vagabond Challenge
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Blind:press_play() patched. Reason: Credit Deck + Credit Sleeve
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Card:draw() patched. Reason: Werewolf rendering
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: G.FUNCS.evaluate_round() patched. Reason: Spinner Animation
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: mod_mult(), mod_chips(), and G.FUNCS.evaluate_play() patched. Reason: Balanced Challenge
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: G.FUNCS.buy_from_shop() patched. Reason: Proxy
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: eval_card() patched. Reason: Penny Tag
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: Card:set_sprites() patched. Reason: Spinner Loading
+INFO - [G] 2025-03-07 15:30:06 :: INFO  :: Bakery :: G.UIDEF.use_and_sell_buttons(), Card:load(), Game:start_run(), copy_card() and Card:remove() patched. Reason: Card Sleeve
+INFO - [G] 2025-03-07 15:30:06 :: TRACE :: Loader :: Mod BetmmaAbilities was unable to load: 
+INFO - [G] 2025-03-07 15:30:06 :: TRACE :: Loader :: Mod BetmmaSpells was unable to load: Missing Dependencies: 1: BetmmaAbilities>=1.0.3
+
+
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: card
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: DefaultLogger :: [Cardsauce] Loaded hook: UI_definitions
+INFO - [G] 2025-03-07 15:30:07 :: WARN  :: Atlas :: Object csau_odio has the same key as an existing object, not registering.
+INFO - [G] 2025-03-07 15:30:07 :: WARN  :: Atlas :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-07 15:30:07 :: WARN  :: Atlas :: Detected duplicate register call on object csau_modicon
+INFO - [G] 2025-03-07 15:30:07 :: TRACE :: Loader :: Mod DebugPlus was unable to load: 
+INFO - [G] 2025-03-07 15:30:07 :: WARN  :: Sound :: Object garb_surge has the same key as an existing object, not registering.
+INFO - [G] 2025-03-07 15:30:07 :: WARN  :: Sound :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-07 15:30:07 :: TRACE :: Loader :: Mod HighestPriestess was unable to load: 
+INFO - [G] 2025-03-07 15:30:07 :: TRACE :: Loader :: Mod JoyousSpring was unable to load: 
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: aries
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: taurus
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: gemini
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: cancer
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: leo
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: virgo
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: libra
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: scorpio
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: sagittarius
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: capricorn
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: aquarius
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded horoscope: pisces
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded booster: horoscope_normal_1
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded booster: horoscope_normal_2
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded booster: horoscope_jumbo_1
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded booster: horoscope_mega_1
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: fortune_cookie
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: poindexter
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: abyss
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: war
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: microwave
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: combo_breaker
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: faded
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: old_man_jimbo
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: joker+
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: normal
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: streaker
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: jobber
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: astigmatism
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: perspective
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: harmony
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: impractical
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: trick_or_treat
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: pessimistic
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: chef
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: leftovers
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: refrigerator
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: hopscotch
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: secret_society
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: bullseye
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: hammer_and_chisel
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: four_leaf_clover
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: soyjoke
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: clown_car
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: gambler
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: 4d
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: dark_room
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: virus
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: man_in_the_mirror
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: unpleasant_gradient
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: random_encounter
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: jackpot
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: bell_curve
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: loaded_gun
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: coupon
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: loony
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: lazy
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: salt_circle
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: light_show
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: monk
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: marco_polo
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: go_fish
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: sleuth
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: dont_mind_if_i_do
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: guillotine
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: power_creep
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: space_race
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: poet
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: hedonist
+INFO - [G] 2025-03-07 15:30:07 :: DEBUG :: Maximus :: Loaded joker: zombie
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: coronation
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: soil
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: stop_sign
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: chihuahua
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: ledger
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: bootleg
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: group_chat
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: minimalist
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: breadsticks
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: glass_cannon
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: gravity
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: fog
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: stone_thrower
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: four_course_meal
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: memory_game
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: rock_slide
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: first_aid_kit
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: hypeman
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: game_review
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: ocham
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: schrodinger
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded joker: chekhov
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: launch_code
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: warp_drive
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: sharp_suit
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: best_dressed
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: shield
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded voucher: guardian
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: 52_commandments
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: crusaders
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: overgrowth
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: square
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: gambling
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: target_practice
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: biggest_loser
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: picky
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: fashion
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: all_stars
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: p2w
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: killer
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: drain
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded challenge: thought
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded deck: sixth_finger
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded deck: nirvana
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded deck: nuclear
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand part: _6
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand part: s_flush
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand part: s_straight
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: three_pair
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: double_triple
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: 6oak
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: s_straight
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: s_flush
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: house_party
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: f_three_pair
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: f_double_triple
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: s_straight_f
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: f_party
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded hand type: f_6oak
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: microscopii
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: wasp
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: pegasi
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: trappist
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: corot
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: poltergeist
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: gliese
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: cancri
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: proxima
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: phobetor
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded consumable: kepler
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded blind: rot
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded blind: grinder
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Maximus :: Loaded tag: star
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: Loaded Three Deposit Mod
+INFO - [G] 2025-03-07 15:30:08 :: TRACE :: Loader :: Mod kino was unable to load: 
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_atlas
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_kiki
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_power
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_tiny
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_chromatic
+INFO - [G] 2025-03-07 15:30:08 :: WARN  :: Atlas :: Detected duplicate register call on object mtg_lotus
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: calling_card
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: quick_fix
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: sacrificial_lamb
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: wish_you_were_here
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: stamp
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: solar_system
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: furioso
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: pride_flag
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: pool_table
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: summoning_circle
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: hole_in_one
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: derecho
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: forgery
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: skydiver
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: solemn_lament
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: ghost_cola
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: mismatched_sock
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: shopping_center
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: union_card
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: nachos
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: jester_of_nihil
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: complete_breakfast
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: reference_card
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: crispy_taco
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: soft_taco
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: prince_of_darkness
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: black_rainbows
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: emergency_broadcast
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: triple_moon_goddess
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: wild_prize
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: bicycle
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: grand_strategy
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: great_wave
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: let_it_happen
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: dreamsicle
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: popsicle_stick
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: cakepop
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: pop_stick
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: caramel_apple
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: pointy_stick
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: charred_marshmallow
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: sticky_stick
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: paranoia
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: subterfuge
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: unholy_alliance
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: cherry_blossoms
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: blue_bonnets
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: autumn_leaves
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: evergreens
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: river
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: moribund
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: jimbo_adventure
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: joker_cookie
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: the_world
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: meeple
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: basic_energy
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: coffee
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: cream_liqueur
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: big_misser
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: jestrica
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: epic_sauce
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: find_jimbo
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: champagne
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: apple
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: alert
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: legacy
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: backpack
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: Paperback :: Loaded joker: pocket_pair
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded : colours
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: misc_functions
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: game
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: card
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: UI_definitions
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: state_events
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: cardarea
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: blind
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded hook: common_events
+INFO - [G] 2025-03-07 15:30:08 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Up Your Sleeve
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Ouroboros
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Moody
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: The One
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Champion
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Champions Belt
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Lvl Death
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Gas Lamp
+INFO - [G] 2025-03-07 15:30:09 :: WARN  :: Joker :: Object j_vic_the_one has the same key as an existing object, not registering.
+INFO - [G] 2025-03-07 15:30:09 :: WARN  :: Joker :: If you want to modify an existing object, use take_ownership()
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: The One
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Paradise Parrot
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Skyscraper
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Pippi Panini
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Yurika Harako
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Syzygy
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Stheno
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded joker: Tower Into Space
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Worm
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Rock
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Bell
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Spin
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Bottle
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Loop
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Dagger
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Prion
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Gold
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Ribbon
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded blind: Final Patriarch
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: VictinsCollection :: Loaded consumable: Short Rest
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: broker
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: rekoj
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: da_joki
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: orb_of_confusion
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: going_viral
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: snowball_effect
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: face_value
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: twins
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: union_member_card
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: gambit
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: forbidden_fruit
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: demon_core
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: last_hurrah
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: garbage_bag
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: JokerHub :: Loaded joker: hudson
+INFO - [G] 2025-03-07 15:30:09 :: WARN  :: Atlas :: Detected duplicate register call on object SharrisMod_sharrijokers
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: [CCC] Jokers loaded
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: [CCC] Decks loaded
+INFO - [G] 2025-03-07 15:30:09 :: DEBUG :: DefaultLogger :: [CCC] Vouchers loaded
+INFO - [G] 2025-03-07 15:30:09 :: WARN  :: Atlas :: Detected duplicate register call on object ccc_modicon
+INFO - [G] 2025-03-07 15:30:09 :: INFO  :: TIMER :: [0001] Injected Language in 10.592 ms
+INFO - [G] 2025-03-07 15:30:09 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 13.578 ms
+INFO - [G] 2025-03-07 15:30:17 :: INFO  :: TIMER :: [0371] Injected Atlas in 8204.335 ms
+INFO - [G] 2025-03-07 15:30:17 :: INFO  :: TIMER :: [0040] Injected Sound in 429.635 ms
+INFO - [G] 2025-03-07 15:30:17 :: INFO  :: TIMER :: [0010] Injected Stake in 0.250 ms
+INFO - [G] 2025-03-07 15:30:17 :: INFO  :: TIMER :: [0007] Injected Rarity in 0.036 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0016] Injected ObjectType in 0.203 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [1211] Injected Center in 8.951 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0012] Injected Undiscovered Sprite in 0.022 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0031] Injected Blind in 0.589 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0011] Injected Seal in 0.425 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0006] Injected Suit in 0.538 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0021] Injected Rank in 0.473 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0030] Injected DeckSkin in 1.101 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0023] Injected PokerHand in 0.339 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0046] Injected Challenge in 0.080 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0009] Injected Tag in 0.195 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0007] Injected Sticker in 0.338 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0009] Injected Shader in 339.934 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0001] Injected Keybind in 0.010 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0001] Injected Achievement in 0.149 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0002] Injected nil in 0.016 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0021] Injected Draw Step in 0.061 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0000] Injected [INTERNAL] in 226.495 ms
+INFO - [G] 2025-03-07 15:30:18 :: INFO  :: TIMER :: [0057] Injected D6 Side in 0.319 ms
+INFO - [G] LONG DT @ 1317: 0.053514736421457
+INFO - [G] LONG DT @ 1317: 0.061069729137178
+INFO - [G] LONG DT @ 1317: 0.067571503309742
+INFO - [G] LONG DT @ 1318: 0.074362562647769
+INFO - [G] LONG DT @ 1318: 0.080307050118249
+INFO - [G] LONG DT @ 1318: 0.084583260094563
+INFO - [G] LONG DT @ 1318: 0.086614628075666
+INFO - [G] LONG DT @ 1318: 0.087916022460559
+INFO - [G] LONG DT @ 1318: 0.088885377968437
+INFO - [G] LONG DT @ 1318: 0.089639542374742
+INFO - [G] LONG DT @ 1318: 0.090349893899783
+INFO - [G] LONG DT @ 1318: 0.090843035119825
+INFO - [G] LONG DT @ 1318: 0.092828708095857
+INFO - [G] LONG DT @ 1318: 0.092949686476691
+INFO - [G] LONG DT @ 1319: 0.094034729181343
+INFO - [G] LONG DT @ 1319: 0.096929623345089
+INFO - [G] LONG DT @ 1319: 0.1
+INFO - [G] LONG DT @ 1319: 0.099990059999964
+INFO - [G] LONG DT @ 1319: 0.099167447999966
+INFO - [G] LONG DT @ 1319: 0.0981730184
+INFO - [G] LONG DT @ 1319: 0.097212674719989
+INFO - [G] LONG DT @ 1319: 0.096532979775991
+INFO - [G] LONG DT @ 1319: 0.0960246038208
+INFO - [G] LONG DT @ 1319: 0.097289243056633
+INFO - [G] LONG DT @ 1319: 0.098469694445325
+INFO - [G] LONG DT @ 1320: 0.099343675556245
+INFO - [G] LONG DT @ 1320: 0.1
+INFO - [G] LONG DT @ 1320: 0.098060760000026
+INFO - [G] LONG DT @ 1320: 0.095861548000006
+INFO - [G] LONG DT @ 1320: 0.093889498399986
+INFO - [G] LONG DT @ 1320: 0.092464798720014
+INFO - [G] LONG DT @ 1320: 0.091329998976015
+INFO - [G] LONG DT @ 1320: 0.090217719180799
+INFO - [G] LONG DT @ 1320: 0.089984315344623
+INFO - [G] LONG DT @ 1320: 0.089271312275696
+INFO - [G] LONG DT @ 1321: 0.089377549820583
+INFO - [G] LONG DT @ 1321: 0.088893339856475
+INFO - [G] LONG DT @ 1321: 0.08865231188518
+INFO - [G] LONG DT @ 1321: 0.088956989508128
+INFO - [G] LONG DT @ 1321: 0.089680271606501
+INFO - [G] LONG DT @ 1321: 0.089839137285222
+INFO - [G] LONG DT @ 1321: 0.089924489828147
+INFO - [G] LONG DT @ 1321: 0.09010767186255
+INFO - [G] LONG DT @ 1321: 0.089272617490004
+INFO - [G] LONG DT @ 1321: 0.088620153992003
+INFO - [G] LONG DT @ 1321: 0.088613963193625
+INFO - [G] LONG DT @ 1321: 0.088784550554887
+INFO - [G] LONG DT @ 1322: 0.089983140443902
+INFO - [G] LONG DT @ 1322: 0.090968792355122
+INFO - [G] LONG DT @ 1322: 0.092259413884092
+INFO - [G] LONG DT @ 1322: 0.092795211107283
+INFO - [G] LONG DT @ 1322: 0.093096728885856
+INFO - [G] LONG DT @ 1322: 0.093492023108663
+INFO - [G] LONG DT @ 1322: 0.093637898486915
+INFO - [G] LONG DT @ 1322: 0.093906918789569
+INFO - [G] LONG DT @ 1322: 0.1
+INFO - [G] LONG DT @ 1322: 0.098035020000025
+INFO - [G] LONG DT @ 1323: 0.096404896000035
+INFO - [G] LONG DT @ 1323: 0.094788076799986
+INFO - [G] LONG DT @ 1323: 0.093080361440013
+INFO - [G] LONG DT @ 1323: 0.091701869151993
+INFO - [G] LONG DT @ 1323: 0.090594235321603
+INFO - [G] LONG DT @ 1323: 0.091186288257279
+INFO - [G] LONG DT @ 1323: 0.091655450605813
+INFO - [G] LONG DT @ 1323: 0.092012380484686
+INFO - [G] LONG DT @ 1323: 0.091905104387715
+INFO - [G] LONG DT @ 1323: 0.090850243510211
+INFO - [G] LONG DT @ 1323: 0.089844794808147
+INFO - [G] LONG DT @ 1324: 0.089116215846538
+INFO - [G] LONG DT @ 1324: 0.088398852677194
+INFO - [G] LONG DT @ 1324: 0.087895162141791
+INFO - [G] LONG DT @ 1324: 0.087497169713401
+INFO - [G] LONG DT @ 1324: 0.087175555770727
+INFO - [G] LONG DT @ 1324: 0.08839184461658
+INFO - [G] LONG DT @ 1324: 0.08793699569328
+INFO - [G] LONG DT @ 1324: 0.087873756554618
+INFO - [G] LONG DT @ 1324: 0.088922005243674
+INFO - [G] LONG DT @ 1324: 0.088191464194972
+INFO - [G] LONG DT @ 1324: 0.087530691355978
+INFO - [G] LONG DT @ 1325: 0.087057793084783
+INFO - [G] LONG DT @ 1325: 0.087832354467799
+INFO - [G] LONG DT @ 1325: 0.087414703574251
+INFO - [G] LONG DT @ 1325: 0.088149742859409
+INFO - [G] LONG DT @ 1325: 0.089670974287499
+INFO - [G] LONG DT @ 1325: 0.1
+INFO - [G] LONG DT @ 1325: 0.099609039999978
+INFO - [G] LONG DT @ 1325: 0.098395352000001
+INFO - [G] LONG DT @ 1325: 0.096976321599997
+INFO - [G] LONG DT @ 1325: 0.095832657279982
+INFO - [G] LONG DT @ 1325: 0.094873205823988
+INFO - [G] LONG DT @ 1326: 0.093203304659199
+INFO - [G] LONG DT @ 1326: 0.091861663727332
+INFO - [G] LONG DT @ 1326: 0.09085021098189
+INFO - [G] LONG DT @ 1326: 0.089993988785493
+INFO - [G] LONG DT @ 1326: 0.089233551028405
+INFO - [G] LONG DT @ 1326: 0.090139400822708
+INFO - [G] LONG DT @ 1326: 0.091295000658204
+INFO - [G] LONG DT @ 1326: 0.091813860526564
+INFO - [G] LONG DT @ 1326: 0.092137448421243
+INFO - [G] LONG DT @ 1326: 0.092009318736987
+INFO - [G] LONG DT @ 1326: 0.0908059749896
+INFO - [G] LONG DT @ 1327: 0.089783959991684
+INFO - [G] LONG DT @ 1327: 0.088918567993328
+INFO - [G] LONG DT @ 1327: 0.088527354394668
+INFO - [G] LONG DT @ 1327: 0.087887623515733
+INFO - [G] LONG DT @ 1327: 0.087405198812592
+INFO - [G] LONG DT @ 1327: 0.087235539050075
+INFO - [G] LONG DT @ 1327: 0.088781071240047
+INFO - [G] LONG DT @ 1327: 0.08835311699206
+INFO - [G] LONG DT @ 1327: 0.08801375359364
+INFO - [G] LONG DT @ 1327: 0.087638842874899
+INFO - [G] LONG DT @ 1327: 0.089674034299904
+INFO - [G] LONG DT @ 1328: 0.092465467439945
+INFO - [G] LONG DT @ 1328: 0.1
+INFO - [G] LONG DT @ 1328: 0.098152079999982
+INFO - [G] LONG DT @ 1328: 0.09623612400001
+INFO - [G] LONG DT @ 1328: 0.094498059199971
+INFO - [G] LONG DT @ 1328: 0.093079207360012
+INFO - [G] LONG DT @ 1328: 0.091889465887976
+INFO - [G] LONG DT @ 1328: 0.090865532710417
+INFO - [G] LONG DT @ 1328: 0.090008106168335
+INFO - [G] LONG DT @ 1328: 0.089346884934635
+INFO - [G] LONG DT @ 1328: 0.088816387947742
+INFO - [G] LONG DT @ 1329: 0.088455830358166
+INFO - [G] LONG DT @ 1329: 0.088202324286529
+INFO - [G] LONG DT @ 1329: 0.088027179429242
+INFO - [G] LONG DT @ 1329: 0.089337183543395
+INFO - [G] LONG DT @ 1329: 0.088796686834691
+INFO - [G] LONG DT @ 1329: 0.088398369467751
+INFO - [G] LONG DT @ 1329: 0.089678155574197
+INFO - [G] LONG DT @ 1329: 0.089687264459388
+INFO - [G] LONG DT @ 1329: 0.089238391567519
+INFO - [G] LONG DT @ 1329: 0.088747533254001
+INFO - [G] LONG DT @ 1329: 0.088644386603182
+INFO - [G] LONG DT @ 1330: 0.08992662928255
+INFO - [G] LONG DT @ 1330: 0.08915994342605
+INFO - [G] LONG DT @ 1330: 0.08853887474082
+INFO - [G] LONG DT @ 1330: 0.089555899792674
+INFO - [G] LONG DT @ 1330: 0.08892151983413
+INFO - [G] LONG DT @ 1330: 0.088662095867323
+INFO - [G] LONG DT @ 1330: 0.088565516693861
+INFO - [G] LONG DT @ 1330: 0.08950731335509
+INFO - [G] LONG DT @ 1330: 0.1
+INFO - [G] LONG DT @ 1330: 0.097358980000017
+INFO - [G] LONG DT @ 1330: 0.095161124000009
+INFO - [G] LONG DT @ 1331: 0.093228599200024
+INFO - [G] LONG DT @ 1331: 0.092326939360015
+INFO - [G] LONG DT @ 1331: 0.091556731487976
+INFO - [G] LONG DT @ 1331: 0.090883245190394
+INFO - [G] LONG DT @ 1331: 0.091303136152314
+INFO - [G] LONG DT @ 1331: 0.092210568921844
+INFO - [G] LONG DT @ 1331: 0.092429275137489
+INFO - [G] LONG DT @ 1331: 0.091044020109995
+INFO - [G] LONG DT @ 1331: 0.08981115608797
+INFO - [G] LONG DT @ 1331: 0.089012064870379
+INFO - [G] LONG DT @ 1331: 0.088394811896311
+INFO - [G] LONG DT @ 1332: 0.087905589517052
+INFO - [G] LONG DT @ 1332: 0.087448371613666
+INFO - [G] LONG DT @ 1332: 0.087139537290925
+INFO - [G] LONG DT @ 1332: 0.086773509832723
+INFO - [G] LONG DT @ 1332: 0.086506867866193
+INFO - [G] LONG DT @ 1332: 0.086346174292966
+INFO - [G] LONG DT @ 1332: 0.087613139434344
+INFO - [G] LONG DT @ 1332: 0.087062911547507
+INFO - [G] LONG DT @ 1332: 0.086652269238005
+INFO - [G] LONG DT @ 1332: 0.087773455390371
+INFO - [G] LONG DT @ 1332: 0.088905984312289
+INFO - [G] LONG DT @ 1332: 0.088155987449851
+INFO - [G] LONG DT @ 1333: 0.088149129959901
+INFO - [G] LONG DT @ 1333: 0.089614203967903
+INFO - [G] LONG DT @ 1333: 0.094011083174318
+INFO - [G] LONG DT @ 1333: 0.1
+INFO - [G] LONG DT @ 1333: 0.1
+INFO - [G] LONG DT @ 1333: 0.097982219999976
+INFO - [G] LONG DT @ 1333: 0.096150055999964
+INFO - [G] LONG DT @ 1333: 0.09606714479998
+INFO - [G] LONG DT @ 1333: 0.094489755840009
+INFO - [G] LONG DT @ 1333: 0.092923144671972
+INFO - [G] LONG DT @ 1334: 0.09156635573761
+INFO - [G] LONG DT @ 1334: 0.092657024590071
+INFO - [G] LONG DT @ 1334: 0.092900499672058
+INFO - [G] LONG DT @ 1334: 0.092546299737662
+INFO - [G] LONG DT @ 1334: 0.092509939790136
+INFO - [G] LONG DT @ 1334: 0.096074731832086
+INFO - [G] LONG DT @ 1334: 0.094574125465689
+INFO - [G] LONG DT @ 1334: 0.092869540372537
+INFO - [G] LONG DT @ 1334: 0.092553312298018
+INFO - [G] LONG DT @ 1334: 0.092029789838428
+INFO - [G] LONG DT @ 1334: 0.090863971870755
+INFO - [G] LONG DT @ 1335: 0.089944517496583
+INFO - [G] LONG DT @ 1335: 0.089796793997272
+INFO - [G] LONG DT @ 1335: 0.089118975197839
+INFO - [G] LONG DT @ 1335: 0.088387320158248
+INFO - [G] LONG DT @ 1335: 0.088426156126582
+INFO - [G] LONG DT @ 1335: 0.0876941249013
+INFO - [G] LONG DT @ 1335: 0.087123159921017
+INFO - [G] LONG DT @ 1335: 0.086453007936822
+INFO - [G] LONG DT @ 1335: 0.086040906349442
+INFO - [G] LONG DT @ 1335: 0.087137505079571
+INFO - [G] LONG DT @ 1335: 0.088156984063655
+INFO - [G] LONG DT @ 1336: 0.1
+INFO - [G] LONG DT @ 1336: 0.098538880000006
+INFO - [G] LONG DT @ 1336: 0.097024283999985
+INFO - [G] LONG DT @ 1336: 0.095787947200005
+INFO - [G] LONG DT @ 1336: 0.094736317760007
+INFO - [G] LONG DT @ 1336: 0.092640054208002
+INFO - [G] LONG DT @ 1336: 0.092124943366387
+INFO - [G] LONG DT @ 1336: 0.091766734693136
+INFO - [G] LONG DT @ 1336: 0.090190627754474
+INFO - [G] LONG DT @ 1336: 0.088969502203571
+INFO - [G] LONG DT @ 1336: 0.088128681762887
+INFO - [G] LONG DT @ 1337: 0.088489065410287
+INFO - [G] LONG DT @ 1337: 0.08887727232824
+INFO - [G] LONG DT @ 1337: 0.088127797862608
+INFO - [G] LONG DT @ 1337: 0.08730755829009
+INFO - [G] LONG DT @ 1337: 0.086607706632047
+INFO - [G] LONG DT @ 1337: 0.086081845305633
+INFO - [G] LONG DT @ 1337: 0.08569167624452
+INFO - [G] LONG DT @ 1337: 0.086515180995614
+INFO - [G] LONG DT @ 1337: 0.087078504796508
+INFO - [G] LONG DT @ 1337: 0.087633703837207
+INFO - [G] LONG DT @ 1337: 0.087941223069738
+INFO - [G] LONG DT @ 1337: 0.088251278455814
+INFO - [G] LONG DT @ 1338: 0.088490702764659
+INFO - [G] LONG DT @ 1338: 0.075523282211725
+INFO - [G] LONG DT @ 12: 0.063846985769378
+INFO - [G] LONG DT @ 12: 0.051690728615498
+INFO - [G] ERROR LOADING GAME: Card area 'shop_booster' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_jokers' not instantiated before load
+INFO - [G] ERROR LOADING GAME: Card area 'shop_vouchers' not instantiated before load
+INFO - [G] LONG DT @ 18: 0.051715456307571
+INFO - [G] LONG DT @ 18: 0.058113485046063
+INFO - [G] LONG DT @ 18: 0.062977588036834
+INFO - [G] LONG DT @ 18: 0.066943430429482
+INFO - [G] LONG DT @ 18: 0.070093764343613
+INFO - [G] LONG DT @ 18: 0.072670831474865
+INFO - [G] LONG DT @ 18: 0.074752605179912
+INFO - [G] LONG DT @ 18: 0.076371604143914
+INFO - [G] LONG DT @ 18: 0.077731663315136
+INFO - [G] LONG DT @ 18: 0.07868889065211
+INFO - [G] LONG DT @ 18: 0.079461012521671
+INFO - [G] LONG DT @ 19: 0.080070410017329
+INFO - [G] LONG DT @ 19: 0.080542568013903
+INFO - [G] LONG DT @ 19: 0.08090065441109
+INFO - [G] LONG DT @ 19: 0.081196663528903
+INFO - [G] LONG DT @ 19: 0.081465010823118
+INFO - [G] LONG DT @ 19: 0.081652828658464
+INFO - [G] LONG DT @ 19: 0.081868102926797
+INFO - [G] LONG DT @ 19: 0.082120882341433
+INFO - [G] LONG DT @ 19: 0.083296585873136
+INFO - [G] LONG DT @ 19: 0.08412692869851
+INFO - [G] LONG DT @ 19: 0.084916902958798
+INFO - [G] LONG DT @ 19: 0.085483022367034
+INFO - [G] LONG DT @ 20: 0.084925677893663
+INFO - [G] LONG DT @ 20: 0.085492822314903
+INFO - [G] LONG DT @ 20: 0.086528717851933
+INFO - [G] LONG DT @ 20: 0.1
+INFO - [G] LONG DT @ 20: 0.097010720000008
+INFO - [G] LONG DT @ 20: 0.095816516000008
+INFO - [G] LONG DT @ 20: 0.094619312799973
+INFO - [G] LONG DT @ 20: 0.093632250239985
+INFO - [G] LONG DT @ 20: 0.092535480192016
+INFO - [G] LONG DT @ 20: 0.090539784153603
+INFO - [G] LONG DT @ 20: 0.088957807322888
+INFO - [G] LONG DT @ 21: 0.087689705858273
+INFO - [G] LONG DT @ 21: 0.086669004686648
+INFO - [G] LONG DT @ 21: 0.085918323749314
+INFO - [G] LONG DT @ 21: 0.085263338999462
+INFO - [G] LONG DT @ 21: 0.084846251199571
+INFO - [G] LONG DT @ 21: 0.08555458095962
+INFO - [G] LONG DT @ 21: 0.086143124767736
+INFO - [G] LONG DT @ 21: 0.085429079814155
+INFO - [G] LONG DT @ 21: 0.084861363851354
+INFO - [G] LONG DT @ 21: 0.084376351081069
+INFO - [G] LONG DT @ 21: 0.084058260864873
+INFO - [G] LONG DT @ 21: 0.083643568691873
+INFO - [G] LONG DT @ 22: 0.083287674953513
+INFO - [G] LONG DT @ 22: 0.083017279962817
+INFO - [G] LONG DT @ 22: 0.082793883970237
+INFO - [G] LONG DT @ 22: 0.082778947176175
+INFO - [G] LONG DT @ 22: 0.082630357740943
+INFO - [G] LONG DT @ 22: 0.082519606192788
+INFO - [G] LONG DT @ 22: 0.08524152495422
+INFO - [G] LONG DT @ 22: 0.085122459963366
+INFO - [G] LONG DT @ 22: 0.086178347970685
+INFO - [G] LONG DT @ 22: 0.1
+INFO - [G] LONG DT @ 22: 0.09698793999999
+INFO - [G] LONG DT @ 23: 0.094294792000004
+INFO - [G] LONG DT @ 23: 0.092061433600001
+INFO - [G] LONG DT @ 23: 0.090254266879986
+INFO - [G] LONG DT @ 23: 0.088760993504006
+INFO - [G] LONG DT @ 23: 0.087685274803183
+INFO - [G] LONG DT @ 23: 0.086895299842551
+INFO - [G] LONG DT @ 23: 0.086242839874034
+INFO - [G] LONG DT @ 23: 0.085545291899224
+INFO - [G] LONG DT @ 23: 0.084963613519404
+INFO - [G] LONG DT @ 23: 0.085431630815502
+INFO - [G] LONG DT @ 23: 0.085519624652405
+INFO - [G] LONG DT @ 23: 0.086095559721923
+INFO - [G] LONG DT @ 24: 0.085792847777529
+INFO - [G] LONG DT @ 24: 0.085158418222025
+INFO - [G] LONG DT @ 24: 0.083547794577637
+INFO - [G] LONG DT @ 24: 0.083654475662089
+INFO - [G] LONG DT @ 24: 0.083002560529692
+INFO - [G] LONG DT @ 24: 0.081819548423766
+INFO - [G] LONG DT @ 24: 0.082511178739014
+INFO - [G] LONG DT @ 24: 0.082011162991184
+INFO - [G] LONG DT @ 24: 0.08129815039296
+INFO - [G] LONG DT @ 24: 0.082165920314349
+INFO - [G] LONG DT @ 24: 0.081919756251486
+INFO - [G] LONG DT @ 24: 0.081650805001225
+INFO - [G] LONG DT @ 25: 0.080522624000964
+INFO - [G] LONG DT @ 25: 0.080394979200787
+INFO - [G] LONG DT @ 25: 0.082098823360602
+INFO - [G] LONG DT @ 25: 0.083656678688493
+INFO - [G] LONG DT @ 25: 0.1
+INFO - [G] LONG DT @ 25: 0.096724980000026
+INFO - [G] LONG DT @ 25: 0.094580324000021
+INFO - [G] LONG DT @ 25: 0.092004939200001
+INFO - [G] LONG DT @ 25: 0.089696151360004
+INFO - [G] LONG DT @ 25: 0.087757301088017
+INFO - [G] LONG DT @ 25: 0.086440560870379
+INFO - [G] LONG DT @ 26: 0.085319308696325
+INFO - [G] LONG DT @ 26: 0.084672346957073
+INFO - [G] LONG DT @ 26: 0.084261857565624
+INFO - [G] LONG DT @ 26: 0.083547986052533
+INFO - [G] LONG DT @ 26: 0.082859148842018
+INFO - [G] LONG DT @ 26: 0.082340719073624
+INFO - [G] LONG DT @ 26: 0.082908455258903
+INFO - [G] LONG DT @ 26: 0.084541424207089
+INFO - [G] LONG DT @ 26: 0.084503279365663
+INFO - [G] LONG DT @ 26: 0.09211534349256
+INFO - [G] LONG DT @ 26: 0.090552514794054
+INFO - [G] LONG DT @ 26: 0.089001611835225
+INFO - [G] LONG DT @ 27: 0.087842549468186
+INFO - [G] LONG DT @ 27: 0.087000359574547
+INFO - [G] LONG DT @ 27: 0.086038907659645
+INFO - [G] LONG DT @ 27: 0.085220846127723
+INFO - [G] LONG DT @ 27: 0.084580196902173
+INFO - [G] LONG DT @ 27: 0.084253557521713
+INFO - [G] LONG DT @ 27: 0.083998946017386
+INFO - [G] LONG DT @ 27: 0.085168296813923
+INFO - [G] LONG DT @ 27: 0.084654837451106
+INFO - [G] LONG DT @ 27: 0.085198589960903
+INFO - [G] LONG DT @ 27: 0.069780431968735
+INFO - [G] LONG DT @ 27: 0.057118065574955
+INFO - [G] LONG DT @ 28: 0.1
+INFO - [G] LONG DT @ 28: 0.083298880000011
+INFO - [G] LONG DT @ 28: 0.068631923999996
+INFO - [G] LONG DT @ 28: 0.056734679200015
+INFO - [G] LONG DT @ 448: 0.050059013935654
+INFO - [G] LONG DT @ 449: 0.050231672962056
+INFO - [G] LONG DT @ 525: 0.056603040593195
+INFO - [G] LONG DT @ 567: 0.06447944238594
+INFO - [G] LONG DT @ 567: 0.055755193908756
+INFO - [G] LONG DT @ 633: 0.052336130595862
+INFO - [G] LONG DT @ 852: 0.056305746056344
+INFO - [G] LONG DT @ 915: 0.1
+INFO - [G] LONG DT @ 915: 0.083958220000004
+INFO - [G] LONG DT @ 915: 0.071559996
+INFO - [G] LONG DT @ 915: 0.061646876800008
+INFO - [G] LONG DT @ 915: 0.05352084144001
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: Prepped? true
+INFO - [G] 2025-03-07 16:08:45 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:46 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: Discarded? 0
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:47 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:50 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:51 :: DEBUG :: DefaultLogger :: The Spin : drawn_to_hand
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Played? 0
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:54 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:08:59 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: The Spin : stay_flipped
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Disabled? nil
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Played? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Discarded? 1
+INFO - [G] 2025-03-07 16:09:00 :: DEBUG :: DefaultLogger :: Prepped? nil
+INFO - [G] LONG DT @ 1036: 0.051880860645664
+INFO - [G] LONG DT @ 1254: 0.056088156944642
+INFO - [G] LONG DT @ 1263: 0.063284045555931
+INFO - [G] LONG DT @ 1263: 0.054781396444706
+INFO - [G] LONG DT @ 1271: 0.082679925199994
+INFO - [G] LONG DT @ 1271: 0.070499660159962
+INFO - [G] LONG DT @ 1272: 0.061200808127986
+INFO - [G] LONG DT @ 1272: 0.052964846502351
+INFO - [G] LONG DT @ 820: 0.067020533908591
+INFO - [G] LONG DT @ 820: 0.057729707126784
+INFO - [G] LONG DT @ 820: 0.05019334570152
+INFO - [G] LONG DT @ 976: 0.052919509181639
+INFO - [G] line not found
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: functions/button_callbacks.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-07 16:46:38 :: ERROR :: StackTrace :: Oops! The game crashed
+[SMODS magic_the_jokering "items/seals.lua"]:16: attempt to index field 'extra' (a nil value)
+Stack Traceback
+===============
+(1) Lua local 'handler' at file 'main.lua:612'
+	Local variables:
+	 msg = string: "[SMODS magic_the_jokering \"items/seals.lua\"]:16: attempt to index field 'extra' (a nil value)"
+	 (*temporary) = Lua function '?' (defined at line 31 of chunk [SMODS _ "src/logging.lua"])
+	 (*temporary) = string: "Oops! The game crashed\
+"
+(2) LÖVE metamethod at file 'boot.lua:352'
+	Local variables:
+	 errhand = Lua function '?' (defined at line 598 of chunk main.lua)
+	 handler = Lua function '?' (defined at line 598 of chunk main.lua)
+(3) Lua method 'calculate' at file 'items/seals.lua:16' (from mod with id magic_the_jokering)
+	Local variables:
+	 self = table: 0x0e1cce80  {loc_vars:function: 0x0e1cd080, _saved_d_u:true, original_key:mtg_energy, sticker_sprite:table: 0x0ef1baf8, mod:table: 0x0dfbc298, registered:true (more...)}
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 (*temporary) = nil
+	 (*temporary) = boolean: false
+	 (*temporary) = string: "attempt to index field 'extra' (a nil value)"
+(4) Lua method 'calculate_sticker' at Steamodded file 'src/utils.lua:853' 
+	Local variables:
+	 self = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 key = string: "mtg_energy"
+	 sticker = table: 0x0e1cce80  {loc_vars:function: 0x0e1cd080, _saved_d_u:true, original_key:mtg_energy, sticker_sprite:table: 0x0ef1baf8, mod:table: 0x0dfbc298, registered:true (more...)}
+(5) Lua upvalue 'eval_card_ref' at file 'functions/common_events.lua:777'
+	Local variables:
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 ret = table: 0x12d61818  {}
+	 (for generator) = C function: next
+	 (for state) = table: 0x0e537c48  {perishable:table: 0x0e5393d0, rental:table: 0x0e539860, dndj_explosive:table: 0x0e6611d8, mtg_energy:table: 0x0e1cce80, vic_temporary:table: 0x0e4725e8 (more...)}
+	 (for control) = number: nan
+	 k = string: "mtg_energy"
+	 v = table: 0x0e1cce80  {loc_vars:function: 0x0e1cd080, _saved_d_u:true, original_key:mtg_energy, sticker_sprite:table: 0x0ef1baf8, mod:table: 0x0dfbc298, registered:true (more...)}
+(6) Lua upvalue 'eval_card_ref' at file 'Betmma_Vouchers.lua:2199' (from mod with id BetmmaVouchers)
+	Local variables:
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 (*temporary) = table: 0x12d617d8  {}
+(7) Lua upvalue 'raw_eval_card' at file 'Betmma_Vouchers.lua:4935' (from mod with id BetmmaVouchers)
+	Local variables:
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 (*temporary) = table: 0x12d61908  {}
+(8) Lua upvalue 'eval_cardRef' at file 'src//util.lua:667' (from mod with id Bakery)
+	Local variables:
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+(9) Lua global 'eval_card' at file 'lua_files/decks.lua:7' (from mod with id CelesteCardCollection)
+	Local variables:
+	 card = table: 0x105c8610  {click_offset:table: 0x24ee04f8, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x24ee0340, last_aligned:-1, extra_cost:0 (more...)}
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+(10) Lua field 'calculate_context' at Steamodded file 'src/utils.lua:1406' 
+	Local variables:
+	 context = table: 0x12605dd0  {check_enhancement:true, no_blueprint:true, cardarea:table: 0x12541440, other_card:table: 0x12103708}
+	 return_table = table: 0x12605da8  {1:table: 0x12605fd8, 2:table: 0x0ff67e80, 3:table: 0x0ff68488, 4:table: 0x13493e40, 5:table: 0x11d713f0, 6:table: 0x13493d00, 7:table: 0x0fa8d948 (more...)}
+	 (for index) = number: 2
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 2
+	 (*temporary) = number: 13
+(11) Lua field 'get_enhancements' at Steamodded file 'src/utils.lua:890' 
+	Local variables:
+	 card = table: 0x12103708  {click_offset:table: 0x11f85d20, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x11f85b68, last_aligned:-1, extra_cost:0 (more...)}
+	 extra_only = boolean: true
+	 enhancements = table: 0x12605d80  {}
+	 calc_return = table: 0x12605da8  {1:table: 0x12605fd8, 2:table: 0x0ff67e80, 3:table: 0x0ff68488, 4:table: 0x13493e40, 5:table: 0x11d713f0, 6:table: 0x13493d00, 7:table: 0x0fa8d948 (more...)}
+(12) Lua field 'calculate_quantum_enhancements' at Steamodded file 'src/utils.lua:929' 
+	Local variables:
+	 card = table: 0x12103708  {click_offset:table: 0x11f85d20, static_rotation:false, ambient_tilt:0.2, parent:table: 0x12541440, T:table: 0x11f85b68, last_aligned:-1, extra_cost:0 (more...)}
+	 effects = table: 0x12605a80  {1:table: 0x12605b40, 2:table: 0x12605b68}
+	 context = table: 0x12eac060  {ccc_fire:true, cardarea:table: 0x12541440, extra_enhancement:true}
+(13) Lua field 'calculate_context' at Steamodded file 'src/utils.lua:1409' 
+	Local variables:
+	 context = table: 0x12eac060  {ccc_fire:true, cardarea:table: 0x12541440, extra_enhancement:true}
+	 return_table = nil
+	 (for index) = number: 1
+	 (for limit) = number: 2
+	 (for step) = number: 1
+	 i = number: 1
+	 effects = table: 0x12605a80  {1:table: 0x12605b40, 2:table: 0x12605b68}
+(14) Lua function '?' at file 'functions/button_callbacks.lua:2064' (best guess)
+	Local variables:
+	 e = table: 0x11356128  {click_offset:table: 0x0f8608c0, children:table: 0x13190310, parent:table: 0x11356098, T:table: 0x0f8607d0, offset:table: 0x0ec7b1e8, role:table: 0x12299128 (more...)}
+	 (for generator) = C function: next
+	 (for state) = table: 0x10301048  {mult:table: 0x10301138, chips:table: 0x103010a8}
+	 (for control) = number: nan
+	 k = string: "chips"
+	 v = table: 0x103010a8  {id:flame_chips, colour:table: 0x0de5c288, accent:table: 0x0fd23800, ID:195742, arg_tab:chip_flames}
+	 _F = table: 0x1a97c8c8  {change:4.6565186380945e-97, colour_1:table: 0x0de5c288, intensity_vel:-4.1194617959645e-27, real_intensity:3.4428678831821e-25, colour_2:table: 0x0fd23800 (more...)}
+	 exptime = number: 0.99523
+(15) Lua method 'update' at file 'engine/ui.lua:960'
+	Local variables:
+	 self = table: 0x11356128  {click_offset:table: 0x0f8608c0, children:table: 0x13190310, parent:table: 0x11356098, T:table: 0x0f8607d0, offset:table: 0x0ec7b1e8, role:table: 0x12299128 (more...)}
+	 dt = number: 0.0627462
+(16) Lua upvalue 'gameUpdateRef' at file 'game.lua:2706'
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+	 http_resp = nil
+	 move_dt = number: 0.0119528
+	 (for generator) = C function: next
+	 (for state) = table: 0x0de55b98  {1:table: 0x0e40cc08, 2:table: 0x10825a58, 3:table: 0x0dcf8538, 4:table: 0x10d55618, 5:table: 0x10a25b68, 6:table: 0x0e6b9908, 7:table: 0x0ec779b8 (more...)}
+	 (for control) = number: nan
+	 k = number: 181
+	 v = table: 0x11356128  {click_offset:table: 0x0f8608c0, children:table: 0x13190310, parent:table: 0x11356098, T:table: 0x0f8607d0, offset:table: 0x0ec7b1e8, role:table: 0x12299128 (more...)}
+(17) Lua upvalue 'upd' at Steamodded file 'src/ui.lua:86' 
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(18) Lua upvalue 'game_updateref' at file 'main.lua:1779'
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(19) Lua upvalue 'upd' at file 'CA_Overrides.lua:897' (from mod with id CodexArcanum)
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(20) Lua upvalue 'upd' at file 'jokers/grannycream.lua:73' (from mod with id Cardsauce)
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(21) Lua upvalue 'update_ref' at line 56 of chunk '"C:\Users\erikk\AppData\Roaming\Balatro\Mods/M..."]'
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(22) Lua method 'update' at file 'hooks/game.lua:58' (from mod with id victinscollection)
+	Local variables:
+	 self = table: 0x0de50f40  {F_GUIDE:false, F_CRASH_REPORTS:false, SOUND_MANAGER:table: 0x0e350008, setup_seed:, F_QUIT_BUTTON:true, energy:function: 0x0e56ec68, F_ENGLISH_ONLY:false (more...)}
+	 dt = number: 0.0119528
+(23) Lua upvalue 'oldupd' at file 'main.lua:995'
+	Local variables:
+	 dt = number: 0.0119528
+(24) Lua upvalue 'loveUpdateReference' at file 'main.lua:1808'
+	Local variables:
+	 dt = number: 0.0119528
+(25) Lua field 'update' at file 'jokers/speen.lua:75' (from mod with id Cardsauce)
+	Local variables:
+	 dt = number: 0.0119528
+(26) Lua function '?' at file 'main.lua:934' (best guess)
+(27) global C function 'xpcall'
+(28) LÖVE function at file 'boot.lua:377' (best guess)
+	Local variables:
+	 func = Lua function '?' (defined at line 905 of chunk main.lua)
+	 inerror = boolean: true
+	 deferErrhand = Lua function '(LÖVE Function)' (defined at line 348 of chunk [love "boot.lua"])
+	 earlyinit = Lua function '(LÖVE Function)' (defined at line 355 of chunk [love "boot.lua"])
+
+INFO - [G] file not found: functions/button_callbacks.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] file not found: main.lua: No such file or directory
+INFO - [G] 2025-03-07 16:46:38 :: INFO  :: StackTrace :: Additional Context:
+Balatro Version: 1.0.1o-FULL
+Modded Version: 1.0.0~BETA-0304a-STEAMODDED
+LÖVE Version: 11.5.0
+Lovely Version: 0.7.1
+Platform: Windows
+Steamodded Mods:
+    1: Magic: the Jokering by spire_winder, drago [ID: magic_the_jokering, Version: 0.8.6a, Uses Lovely]
+    2: Bakery by BakersDozenBagels [ID: Bakery, Version: 0.1.25~4, Uses Lovely]
+    3: Lucky Jimbos: Joker Pack by LuckySix [ID: L6_luckyjimbo, Version: 0.3~alpha-5]
+    4: Betmma Voucher Pack by Betmma, nicholassam6425 [ID: BetmmaVoucherPack]
+    5: Unsorted by Telbone [ID: unsorted]
+    6: Art of the Deal by Rad Dealer, Various Artists [ID: aotd, Uses Lovely]
+    7: KCVanilla by krackocloud [ID: kcvanilla, Version: 2.3.0, Uses Lovely]
+    8: Buffoonery by PinkMaggit [ID: Buffoonery, Version: 1.1.5, Uses Lovely]
+    9: Talisman by MathIsFun_, Mathguy24, jenwalter666, cg-223 [ID: Talisman, Version: 2.1.0~dev, Uses Lovely]
+        Break Infinity: omeganum
+    10: D6 Jokers by ItsFlowwey [ID: D6Joker, Priority: -100, Version: 0.7.21, Uses Lovely]
+    11: EvaJokers by Evidence02 [ID: EvaJokers, Version: 0.0.1]
+    12: Prism by Blazingulag [ID: Prism, Priority: 15, Version: 1.3.0, Uses Lovely]
+    13: Garbshit by garb [ID: GARBPACK, Uses Lovely]
+    14: Plantain by TeamToaster [ID: plantain, Priority: 1, Version: 1.0.0, Uses Lovely]
+    15: SharrisMod by itsSharri [ID: sharrismod, Priority: 1, Version: 1.0.0, Uses Lovely]
+    16: JokerHub by sup3p [ID: jokerhub, Priority: 1, Version: 1.1.0, Uses Lovely]
+    17: Better Vouchers This Run UI by Betmma [ID: BetterVouchersThisRunUI]
+    18: Diceylatro by NRIO!!! [ID: diceylatro, Version: 1.0.2-a, Uses Lovely]
+    19: Paperback by PaperMoon, OppositeWolf770, srockw, Nether, B [ID: paperback, Version: 0.5.1, Uses Lovely]
+    20: Celeste Card Collection by AuroraAquir, toneblock, Gappie, bein, sunsetquasar, goose! [ID: CelesteCardCollection, Priority: 10, Version: 0.32.0, Uses Lovely]
+    21: Betmma Vouchers by Betmma [ID: BetmmaVouchers, Priority: -1, Version: 3.0.1.4(20250216)]
+    22: Betmma Jokers by Betmma [ID: BetmmaJokers]
+    23: Victin's Collection by Victin [ID: victinscollection, Uses Lovely]
+    24: 5 legendary challenges by Betmma [ID: legendaryChallenges]
+    25: Join The Crowd by DynaLeet [ID: JoinTheCrowd, Version: 1.0.0]
+    26: Galdur by Eremel_ [ID: galdur, Priority: -10000, Version: 1.2, Uses Lovely]
+    27: Emporium by krokshut [ID: Emporium, Version: 0.4.0]
+    28: DNDJ by Auraa_ [ID: dndj, Version: 0.2.6b]
+    29: Friends Of Jokers by NinjaBanana, Sbubby, Miser, NeonCube [ID: friends_of_jokers, Version: 1.0.0]
+    30: Tesseract by hyperx [ID: tesseract, Version: 0.9.0]
+    31: Neato Jokers by Neato [ID: Neato_Jokers, Version: 1.0.3, Uses Lovely]
+    32: Jester's Privilege by unethikeele [ID: JestersPrivilege]
+    33: Codex Arcanum by itayfeder [ID: CodexArcanum, Priority: -2]
+    34: Cardsauce by BarrierTrio/Gote & Keku [ID: Cardsauce, Version: 1.3.4, Uses Lovely]
+    35: Maximus by Astra, Maxiss02 [ID: Maximus, Version: 0.4.3-beta, Uses Lovely]
+    36: Bad Apple Joker by JamestheJellyfish [ID: BadApple]
+    37: SDM_0's Stuff by SDM_0 [ID: sdm0sstuff, Version: 1.6.4k, Uses Lovely]
+    38: Three Deposit by jonnydeates [ID: THREEDEPOSIT]
+Lovely Mods:
