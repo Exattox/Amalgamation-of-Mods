@@ -25,19 +25,19 @@ This pack contains mods created by various awesome people. Full credit goes to t
 |-------------------------|-------------|
 | **Aikoyori's Shenanigans**| [Aikoyori's Shenanigans](https://github.com/Aikoyori/Balatro-Aikoyoris-Shenanigans) |
 | **Banner**| [Banner](https://github.com/SylviBlossom/Banner) |
-| **Balatro Goes Kino**   | [Kino](https://github.com/IcyEthics/Balatro-Goes-Kino) |
-| **Cryptid**             | [Cryptid](https://github.com/RubyNezuko/Balatro-Cryptid) |
-| **Card Sleeves**        | [Card Sleeves](https://github.com/Larswijn/BalatroCardSleeves) |
-| **SDM_0's Stuff**       | [SDM_0's Stuff](https://github.com/SDM0/Balatro-SDM_0s-Stuff) |
-| **TOGA Pack**           | [TOGA Pack](https://github.com/TheOneGoofAli/TOGA-Balatro-Pack) |
-| **Entropy**             | [Entropy](https://github.com/RubyNezuko/Balatro-Entropy) |
-| **Astronomica**         | [Astronomica](https://github.com/naoriley/Balatro-Astronomica) |
-| **Partner API**         | [Partner API](https://github.com/Larswijn/BalatroPartnerAPI) |
-| **Galdur**              | [Galdur](https://github.com/PorridgeWithPorridge/BalatroGaldur) |
+| **Balatro Goes Kino**   | [Kino](https://github.com/IcyEthics/Kino) |
+| **Cryptid**             | [Cryptid](https://github.com/SpectralPack/Cryptid) |
+| **Card Sleeves**        | [Card Sleeves](https://github.com/Larswijn/CardSleeves) |
+| **SDM_0's Stuff**       | [SDM_0's Stuff](https://github.com/SDM0/SDM_0-s-Stuff)|
+| **TOGA Pack**           | [TOGA Pack](https://github.com/TheOneGoofAli/TOGAPackBalatro) |
+| **Entropy**             | [Entropy](https://github.com/lord-ruby/Entropy) |
+| **Astronomica**         | [Astronomica](https://github.com/naoriley/Astronomica) |
+| **Partner API**         | [Partner API](https://github.com/Icecanno/Partner-API/) |
+| **Galdur**              | [Galdur](https://github.com/Eremel/Galdur) |
 | **GARBSHIT**       | [GARBSHIT](https://github.com/Gainumki/GARBSHIT) |
 | **Yggdrasil**    | [Yggdrasil](https://github.com/bepisfever/Yggdrasil) |
-| **DebugPlus**           | [DebugPlus](https://github.com/azzy-dev/BalatroDebugPlus) |
-| **Finity**              | [Finity](https://github.com/FinnTheBin/Balatro-Finity) |
+| **DebugPlus**           | [DebugPlus](https://github.com/WilsontheWolf/DebugPlus) |
+| **Finity**              | [Finity](https://github.com/frangnosquest/Finity) |
 
 
 ---
