@@ -1,1 +1,0 @@
-=[SMODS _ "smods-https-thread.lua"]
