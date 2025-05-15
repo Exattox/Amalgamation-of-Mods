@@ -69,7 +69,7 @@ You have two options:
 ---
 
 ## ⚠️ Important:
-This modpack **does not come with [Lovely](https://github.com/karai17/lovely)** —  
+This modpack **does not come with [Lovely](https://github.com/ethangreen-dev/lovely-injector)** —  
 You **must** have Lovely installed separately, or the mods will not work.
 
 ---
